@@ -1,0 +1,35 @@
+# robots.txt for Al Arbab Travels (alarbabtravel.pk)
+# Fully compliant with Googlebot, Bingbot, and modern 2026 search crawlers
+
+User-agent: *
+Allow: /
+
+# Disallow administrative, checkout, thank-you, or API routes
+Disallow: /admin/
+Disallow: /api/
+Disallow: /checkout/
+Disallow: /thank-you/
+Disallow: /thank-you
+
+# Disallow internal query parameters to prevent duplicate indexing
+Disallow: /*?*
+Disallow: /*?
+Disallow: /*&
+
+# Explicitly permit indexing of all critical rendering assets
+Allow: /assets/
+Allow: /*.js$
+Allow: /*.css$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.webp$
+Allow: /*.svg$
+Allow: /*.woff$
+Allow: /*.woff2$
+
+# Sitemap index declaration
+Sitemap: https://alarbabtravel.pk/sitemap.xml
+
+# Preferred Domain Host
+Host: https://alarbabtravel.pk

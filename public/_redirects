@@ -1,0 +1,11 @@
+# 301 Canonical Domain Redirects
+http://alarbabtravel.pk/*  https://alarbabtravel.pk/:splat  301!
+https://www.alarbabtravel.pk/*  https://alarbabtravel.pk/:splat  301!
+http://www.alarbabtravel.pk/*  https://alarbabtravel.pk/:splat  301!
+
+# Sitemap and Robots directly
+/sitemap.xml  /sitemap.xml  200
+/robots.txt   /robots.txt   200
+
+# SPA Catch-All
+/*  /index.html  200

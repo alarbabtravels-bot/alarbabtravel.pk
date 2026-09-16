@@ -1,0 +1,15 @@
+/CIDInit /ProcSet findresource begin
+12 dict begin
+begincmap
+/CMapType 2 def
+/CMapName/R30 def
+1 begincodespacerange
+<0000><ffff>
+endcodespacerange
+2 beginbfrange
+<002e><002e><004b>
+<0033><0033><0050>
+endbfrange
+endcmap
+CMapName currentdict /CMap defineresource pop
+end end
