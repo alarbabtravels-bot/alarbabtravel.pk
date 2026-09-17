@@ -99,8 +99,8 @@ export default function App() {
         <div style={{ position: 'relative', zIndex: 1, display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
           <Navbar onOpenEligibility={handleOpenEligibility} />
 
-        <div style={{ flex: 1 }}>
-          <Suspense fallback={<PageLoader />}>
+        <Suspense fallback={<PageLoader />}>
+          <div style={{ flex: 1, minHeight: '80vh' }}>
             <Routes>
               <Route path="/" element={<Home onOpenEligibility={handleOpenEligibility} />} />
               <Route path="/about" element={<About onOpenEligibility={handleOpenEligibility} />} />
@@ -120,10 +120,10 @@ export default function App() {
               <Route path="/contact" element={<Contact onOpenEligibility={handleOpenEligibility} />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
-          </Suspense>
-        </div>
+          </div>
 
-        <Footer onOpenEligibility={handleOpenEligibility} />
+          <Footer onOpenEligibility={handleOpenEligibility} />
+        </Suspense>
 
         {/* Global Floating Glass Widgets */}
         <WhatsAppFloatingButton />

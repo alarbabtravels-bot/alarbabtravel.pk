@@ -90,7 +90,7 @@ export default function Blog({ onOpenEligibility }) {
         description={pageDescription}
         keywords="Pakistan visa guide 2026, Schengen visa file preparation Pakistan, UK visa refusal reasons Pakistan, Germany opportunity card Pakistan"
         canonicalPath={selectedArticle ? `/blog/${selectedArticle.slug || selectedArticle.id}` : "/blog"}
-        image={selectedArticle?.image || "https://alarbabtravel.pk/hero_travel_lux.jpg"}
+        image={selectedArticle?.image || "https://alarbabtravel.pk/hero_travel_lux.webp"}
         type={selectedArticle ? "article" : "website"}
         schema={pageSchemas}
       />
@@ -149,11 +149,7 @@ export default function Blog({ onOpenEligibility }) {
         {/* Articles Grid */}
         <section style={{ paddingTop: '0.5rem', paddingBottom: '3.5rem' }}>
           <div className="container">
-            <div style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fill, minmax(360px, 1fr))',
-              gap: '2rem'
-            }}>
+            <div className="blog-responsive-grid">
               {filteredPosts.map((post) => (
                 <article 
                   key={post.id}
@@ -169,7 +165,10 @@ export default function Blog({ onOpenEligibility }) {
                       src={post.image} 
                       alt={post.title}
                       loading="lazy"
-                      style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                      decoding="async"
+                      width="600"
+                      height="350"
+                      style={{ width: '100%', height: '100%', objectFit: 'cover', aspectRatio: '16/9' }}
                     />
                     <div style={{
                       position: 'absolute',
@@ -291,8 +290,10 @@ export default function Blog({ onOpenEligibility }) {
                   background: 'rgba(255, 255, 255, 0.05)',
                   border: '1px solid var(--border-subtle)',
                   borderRadius: '8px',
-                  width: '36px',
-                  height: '36px',
+                  width: '44px',
+                  height: '44px',
+                  minWidth: '44px',
+                  minHeight: '44px',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',

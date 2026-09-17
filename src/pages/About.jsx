@@ -72,16 +72,16 @@ export default function About({ onOpenEligibility }) {
                   At Al Arbab Travels, we operate like legal caseworkers. We provide full visa processing for Asian destinations (Malaysia, UAE, Thailand) and Umrah packages, alongside full air ticketing services. For European Schengen and USA applications, our scope is strictly expert file preparation—document checklists, financial audits, DS-160 drafting, and mock interview coaching.
                 </p>
 
-                <div style={{
-                  display: 'grid',
-                  gridTemplateColumns: '1fr 1fr',
-                  gap: '1.25rem',
-                  padding: '1.25rem',
-                  background: 'rgba(13, 17, 26, 0.75)',
-                  borderRadius: 'var(--radius-card)',
-                  border: '1px solid rgba(255, 255, 255, 0.12)',
-                  boxShadow: '0 8px 24px rgba(0, 0, 0, 0.4)'
-                }}>
+                <div 
+                  className="form-row-2col"
+                  style={{
+                    padding: '1.25rem',
+                    background: 'rgba(13, 17, 26, 0.75)',
+                    borderRadius: 'var(--radius-card)',
+                    border: '1px solid rgba(255, 255, 255, 0.12)',
+                    boxShadow: '0 8px 24px rgba(0, 0, 0, 0.4)'
+                  }}
+                >
                   <div>
                     <div style={{ fontSize: '1.4rem', fontWeight: 700, color: '#38bdf8', fontFamily: 'var(--font-heading)' }}>
                       Blue Area

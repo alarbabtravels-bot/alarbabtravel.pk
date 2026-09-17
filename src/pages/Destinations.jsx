@@ -233,13 +233,14 @@ export default function Destinations({ onOpenEligibilityWithCountry }) {
               {/* Main Destination Hero Panel */}
               <div className="glass-card" style={{ padding: '2rem', overflow: 'hidden', marginBottom: '2.5rem' }}>
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem', alignItems: 'center' }}>
-                  <div style={{ position: 'relative', borderRadius: '14px', overflow: 'hidden', height: '340px' }}>
+                  <div style={{ position: 'relative', borderRadius: '14px', overflow: 'hidden', height: '340px', minHeight: '220px', aspectRatio: '16/10' }}>
                     <img 
                       src={selectedDestination.image} 
                       alt={`${selectedDestination.country} visa consultancy Pakistan`}
                       width="600"
                       height="340"
-                      style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                      decoding="async"
+                      style={{ width: '100%', height: '100%', objectFit: 'cover', aspectRatio: '16/10' }}
                     />
                     <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 40%, rgba(5, 6, 9, 0.85) 100%)' }} />
                     <div style={{ position: 'absolute', top: '1rem', left: '1rem', display: 'flex', alignItems: 'center', gap: '8px' }}>
@@ -481,11 +482,7 @@ export default function Destinations({ onOpenEligibilityWithCountry }) {
                     </button>
                   </div>
                 ) : (
-                  <div style={{
-                    display: 'grid',
-                    gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 320px), 1fr))',
-                    gap: '1.5rem'
-                  }}>
+                  <div className="destinations-responsive-grid">
                     {filteredDestinations.map((dest) => (
                       <div 
                         key={dest.id}
@@ -508,7 +505,7 @@ export default function Destinations({ onOpenEligibilityWithCountry }) {
                             decoding="async"
                             width="380"
                             height="210"
-                            style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.4s ease' }}
+                            style={{ width: '100%', height: '100%', objectFit: 'cover', aspectRatio: '16/9', transition: 'transform 0.4s ease' }}
                           />
                           <div style={{
                             position: 'absolute',

@@ -545,17 +545,19 @@ export default function Navbar({ onOpenEligibility }) {
                 border: '1px solid rgba(255, 255, 255, 0.2)',
                 borderRadius: '9999px',
                 color: '#ffffff',
-                padding: '4px 10px',
+                padding: '8px 14px',
+                minHeight: '44px',
                 display: 'flex',
                 alignItems: 'center',
-                gap: '5px',
+                gap: '6px',
                 cursor: 'pointer',
-                fontSize: '0.78rem',
-                fontWeight: 600
+                fontSize: '0.82rem',
+                fontWeight: 600,
+                touchAction: 'manipulation'
               }}
             >
               <span>Menu</span>
-              {mobileDrawerOpen ? <X size={14} /> : <Menu size={14} />}
+              {mobileDrawerOpen ? <X size={15} /> : <Menu size={15} />}
             </button>
           </div>
 
@@ -577,23 +579,25 @@ export default function Navbar({ onOpenEligibility }) {
               type="button"
               onClick={onOpenEligibility}
               style={{
-                height: '34px',
+                height: '40px',
+                minHeight: '40px',
                 borderRadius: '9999px',
                 border: '1px solid rgba(238, 216, 138, 0.3)',
                 background: '#000000',
                 color: '#eed88a',
-                padding: '0 12px',
-                fontSize: '0.76rem',
+                padding: '0 14px',
+                fontSize: '0.78rem',
                 fontWeight: 700,
                 cursor: 'pointer',
                 display: 'flex',
                 alignItems: 'center',
                 gap: '4px',
-                whiteSpace: 'nowrap'
+                whiteSpace: 'nowrap',
+                touchAction: 'manipulation'
               }}
             >
               <span>Visa</span>
-              <ArrowRight size={11} />
+              <ArrowRight size={12} />
             </button>
           </div>
         </div>
@@ -627,17 +631,20 @@ export default function Navbar({ onOpenEligibility }) {
                   background: 'rgba(255, 255, 255, 0.08)',
                   border: '1px solid rgba(255, 255, 255, 0.15)',
                   borderRadius: '50%',
-                  width: '32px',
-                  height: '32px',
+                  width: '44px',
+                  height: '44px',
+                  minWidth: '44px',
+                  minHeight: '44px',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
                   color: '#ffffff',
-                  cursor: 'pointer'
+                  cursor: 'pointer',
+                  touchAction: 'manipulation'
                 }}
                 aria-label="Close menu"
               >
-                <X size={16} />
+                <X size={18} />
               </button>
             </div>
 

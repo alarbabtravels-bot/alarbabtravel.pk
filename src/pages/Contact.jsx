@@ -228,7 +228,7 @@ Message: ${formData.message || 'I would like to schedule a consultation in Islam
               <div 
                 className="glass-card"
                 style={{
-                  padding: '2rem',
+                  padding: 'clamp(1.25rem, 3.5vw, 2rem)',
                   background: 'var(--bg-surface)'
                 }}
               >
@@ -282,7 +282,7 @@ Message: ${formData.message || 'I would like to schedule a consultation in Islam
                       />
                     </div>
 
-                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.85rem' }}>
+                    <div className="form-row-2col">
                       <div>
                         <label style={{ display: 'block', marginBottom: '0.35rem', fontSize: '0.82rem', fontWeight: 600, color: '#ffffff', fontFamily: 'var(--font-heading)' }}>
                           WhatsApp / Mobile *
@@ -310,7 +310,7 @@ Message: ${formData.message || 'I would like to schedule a consultation in Islam
                       </div>
                     </div>
 
-                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.85rem' }}>
+                    <div className="form-row-2col">
                       <div>
                         <label style={{ display: 'block', marginBottom: '0.35rem', fontSize: '0.82rem', fontWeight: 600, color: '#ffffff', fontFamily: 'var(--font-heading)' }}>
                           Intended Destination

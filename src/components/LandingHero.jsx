@@ -453,13 +453,13 @@ export default function LandingHero({ onOpenEligibility }) {
                   className="spotlight-quick-item"
                 >
                   <img 
-                    src="/dest_makkah.jpg" 
+                    src="/dest_makkah_thumb.webp" 
                     alt="Makkah Umrah"
                     width="46"
                     height="46"
                     loading="lazy"
                     decoding="async"
-                    style={{ width: '46px', height: '46px', borderRadius: '10px', objectFit: 'cover', flexShrink: 0 }}
+                    style={{ width: '46px', height: '46px', aspectRatio: '1/1', borderRadius: '10px', objectFit: 'cover', flexShrink: 0 }}
                   />
                   <div style={{ flex: 1, minWidth: 0 }}>
                     <div style={{ fontSize: '0.88rem', fontWeight: 700, color: '#ffffff' }}>
@@ -489,13 +489,13 @@ export default function LandingHero({ onOpenEligibility }) {
                   className="spotlight-quick-item"
                 >
                   <img 
-                    src="/dest_dubai.jpg" 
+                    src="/dest_dubai_thumb.webp" 
                     alt="Dubai Visas"
                     width="46"
                     height="46"
                     loading="lazy"
                     decoding="async"
-                    style={{ width: '46px', height: '46px', borderRadius: '10px', objectFit: 'cover', flexShrink: 0 }}
+                    style={{ width: '46px', height: '46px', aspectRatio: '1/1', borderRadius: '10px', objectFit: 'cover', flexShrink: 0 }}
                   />
                   <div style={{ flex: 1, minWidth: 0 }}>
                     <div style={{ fontSize: '0.88rem', fontWeight: 700, color: '#ffffff' }}>
@@ -525,13 +525,13 @@ export default function LandingHero({ onOpenEligibility }) {
                   className="spotlight-quick-item"
                 >
                   <img 
-                    src="/dest_turkey.jpg" 
+                    src="/dest_turkey_thumb.webp" 
                     alt="International Travel"
                     width="46"
                     height="46"
                     loading="lazy"
                     decoding="async"
-                    style={{ width: '46px', height: '46px', borderRadius: '10px', objectFit: 'cover', flexShrink: 0 }}
+                    style={{ width: '46px', height: '46px', aspectRatio: '1/1', borderRadius: '10px', objectFit: 'cover', flexShrink: 0 }}
                   />
                   <div style={{ flex: 1, minWidth: 0 }}>
                     <div style={{ fontSize: '0.88rem', fontWeight: 700, color: '#ffffff' }}>

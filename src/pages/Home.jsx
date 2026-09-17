@@ -23,21 +23,21 @@ export default function Home({ onOpenEligibility }) {
       id: 'thailand',
       title: 'Thailand',
       subtitle: '60-Day Tourist eVisa & DTV Nomad Support · Full Assistance',
-      image: 'https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=800&q=80',
+      image: '/dest_thailand.webp',
       link: '/destinations/thailand'
     },
     {
       id: 'singapore',
       title: 'Singapore',
       subtitle: 'Electronic Visit Visa & Family Holiday Entry · Full Assistance',
-      image: 'https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=800&q=80',
+      image: '/dest_singapore.webp',
       link: '/destinations/singapore'
     },
     {
       id: 'indonesia',
       title: 'Indonesia',
       subtitle: 'Bali Electronic Visa on Arrival (e-VoA) · Full Assistance',
-      image: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80',
+      image: '/dest_indonesia.webp',
       link: '/destinations/indonesia'
     },
     {

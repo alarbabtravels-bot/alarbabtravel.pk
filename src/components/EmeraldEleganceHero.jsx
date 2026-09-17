@@ -488,7 +488,7 @@ export default function EmeraldEleganceHero({ onOpenEligibility }) {
                 inset: 0,
                 backgroundImage: `
                   linear-gradient(180deg, rgba(6, 21, 16, 0.35) 0%, rgba(6, 21, 16, 0.7) 60%, rgba(6, 21, 16, 0.95) 100%),
-                  url('/emerald_liquid_marble.jpg')
+                  url('/emerald_liquid_marble.webp')
                 `,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',

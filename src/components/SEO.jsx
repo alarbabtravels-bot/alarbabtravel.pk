@@ -11,7 +11,7 @@ export default function SEO({
   description = "Al Arbab Travels is Pakistan's premier travel agency and visa consultancy in Islamabad. Full assistance for Asian visit visas, Umrah packages, flight booking, and expert file preparation for Schengen & USA.",
   keywords = "visa consultancy Pakistan, Asian visit visa processing, Umrah packages Islamabad, air ticketing Pakistan, Schengen visa file preparation Pakistan, USA visa application support Pakistan",
   canonicalPath = "",
-  image = "https://alarbabtravel.pk/hero_travel_lux.jpg",
+  image = "https://alarbabtravel.pk/hero_travel_lux.webp",
   type = "website",
   noIndex = false,
   schema = null

@@ -20,7 +20,7 @@ export default function ExactScreenshotHero({ onOpenEligibility }) {
         backgroundColor: '#eaf7f2',
         backgroundImage: `
           linear-gradient(90deg, rgba(240, 253, 248, 0.98) 0%, rgba(240, 253, 248, 0.88) 42%, rgba(240, 253, 248, 0.35) 60%, rgba(255, 255, 255, 0.1) 100%),
-          url('/hero_panoramic_travel.jpg')
+          url('/hero_panoramic_travel.webp')
         `,
         backgroundSize: 'cover',
         backgroundPosition: 'right center',
@@ -179,7 +179,7 @@ export default function ExactScreenshotHero({ onOpenEligibility }) {
           .exact-hero-section {
             background-image: 
               linear-gradient(180deg, rgba(240, 253, 248, 0.94) 0%, rgba(240, 253, 248, 0.96) 100%),
-              url('/hero_panoramic_travel.jpg') !important;
+              url('/hero_panoramic_travel.webp') !important;
             padding: 3.5rem 0 5rem 0 !important;
           }
         }
