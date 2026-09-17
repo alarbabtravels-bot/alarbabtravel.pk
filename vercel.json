@@ -3,6 +3,111 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "framework": "vite",
+  "redirects": [
+    {
+      "source": "/destinations",
+      "has": [
+        { "type": "query", "key": "search", "value": "(?i)malaysia" }
+      ],
+      "destination": "/destinations/malaysia",
+      "permanent": true
+    },
+    {
+      "source": "/destinations",
+      "has": [
+        { "type": "query", "key": "search", "value": "(?i)thailand" }
+      ],
+      "destination": "/destinations/thailand",
+      "permanent": true
+    },
+    {
+      "source": "/destinations",
+      "has": [
+        { "type": "query", "key": "search", "value": "(?i)singapore" }
+      ],
+      "destination": "/destinations/singapore",
+      "permanent": true
+    },
+    {
+      "source": "/destinations",
+      "has": [
+        { "type": "query", "key": "search", "value": "(?i)indonesia" }
+      ],
+      "destination": "/destinations/indonesia",
+      "permanent": true
+    },
+    {
+      "source": "/destinations",
+      "has": [
+        { "type": "query", "key": "search", "value": "(?i)saudi" }
+      ],
+      "destination": "/destinations/saudi-arabia",
+      "permanent": true
+    },
+    {
+      "source": "/destinations",
+      "has": [
+        { "type": "query", "key": "search", "value": "(?i)turkey" }
+      ],
+      "destination": "/destinations/turkey",
+      "permanent": true
+    },
+    {
+      "source": "/destinations",
+      "has": [
+        { "type": "query", "key": "search", "value": "(?i)dubai|uae" }
+      ],
+      "destination": "/destinations/uae",
+      "permanent": true
+    },
+    {
+      "source": "/destinations",
+      "has": [
+        { "type": "query", "key": "search", "value": "(?i)schengen" }
+      ],
+      "destination": "/destinations/schengen",
+      "permanent": true
+    },
+    {
+      "source": "/destinations",
+      "has": [
+        { "type": "query", "key": "search", "value": "(?i)uk" }
+      ],
+      "destination": "/destinations/uk",
+      "permanent": true
+    },
+    {
+      "source": "/destinations",
+      "has": [
+        { "type": "query", "key": "search", "value": "(?i)usa" }
+      ],
+      "destination": "/destinations/usa",
+      "permanent": true
+    },
+    {
+      "source": "/destinations",
+      "has": [
+        { "type": "query", "key": "search", "value": "(?i)canada" }
+      ],
+      "destination": "/destinations/canada",
+      "permanent": true
+    },
+    {
+      "source": "/destinations/saudi",
+      "destination": "/destinations/saudi-arabia",
+      "permanent": true
+    },
+    {
+      "source": "/services/hotels",
+      "destination": "/services/hotel-booking",
+      "permanent": true
+    },
+    {
+      "source": "/services/tours",
+      "destination": "/services/group-corporate-travel",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/(.*)",

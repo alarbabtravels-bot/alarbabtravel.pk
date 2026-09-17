@@ -7,5 +7,10 @@ http://www.alarbabtravel.pk/*  https://alarbabtravel.pk/:splat  301!
 /sitemap.xml  /sitemap.xml  200
 /robots.txt   /robots.txt   200
 
+# 301 Path Normalization Redirects
+/destinations/saudi  /destinations/saudi-arabia  301!
+/services/hotels     /services/hotel-booking     301!
+/services/tours      /services/group-corporate-travel  301!
+
 # SPA Catch-All
 /*  /index.html  200

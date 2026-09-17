@@ -12,7 +12,12 @@ export const faqs = [
   {
     category: "Refusals & Appeals",
     question: "I have had a previous visa rejection for Canada/UK/USA. Can I apply again with Al Arbab Travels?",
-    answer: "Yes, absolutely. A previous refusal is not a permanent ban unless fraudulent documents or misrepresentation were involved. We specialize in refusal turnarounds. Our team conducts a thorough refusal analysis of your decision letter, requests your GCMS notes (for Canada) or identifies the exact evidentiary gaps, and rebuilds your case with ironclad supporting evidence and an addressal cover letter."
+    answer: "Yes, absolutely. A previous refusal is not a permanent ban unless fraudulent documents or misrepresentation were involved. For European Schengen, UK, and USA cases, we provide comprehensive refusal file audits, identifying evidentiary gaps and restructuring your application dossier and cover letter for resubmission. Note that we provide expert file preparation only and never guarantee approvals, as final decisions rest solely with consular authorities."
+  },
+  {
+    category: "Scope & Services",
+    question: "What is the difference between your Asian visa processing and Schengen/USA services?",
+    answer: "For Asian countries (Malaysia, Thailand, Singapore, Indonesia, UAE, Azerbaijan, Qatar, Bahrain, etc.) and Umrah pilgrimages, we provide complete end-to-end visa assistance and processing. For European Schengen countries and the United States (USA), our services are strictly File Preparation Only (document checklist review, application form completion, financial statement audits, DS-160 drafting, and consular mock interview coaching). Consulates for Schengen states and the US Embassy legally mandate personal in-person biometric enrollment and interviews; we do not process, submit, or guarantee visa approvals for these destinations."
   },
   {
     category: "Appointments & Biometrics",
@@ -30,9 +35,9 @@ export const faqs = [
     answer: "Embassies want reasonable assurance that you will return to Pakistan before your visa expires. Strong ties include: (1) Employment stability: Salary slips, employment letter with approved leave sanction, and FBR tax returns; (2) Business ownership: SECP/FBR registration, chamber of commerce membership, company bank statements; (3) Family ties: NADRA Family Registration Certificate (FRC), Marriage Certificate (MRC), children's school enrollment; (4) Physical assets: Registered property, land ownership (Fard/Registry), and business assets."
   },
   {
-    category: "General & Licensing",
-    question: "Is Al Arbab Travels an officially registered travel agency?",
-    answer: "Yes. Al Arbab Travels is a legally registered corporate entity under the Securities and Exchange Commission of Pakistan (SECP). Our office is centrally situated at Eagle Plaza, Mezzanine No. 121, Fazal-e-Haq Road, Blue Area, Islamabad, welcoming clients for in-person consultations."
+    category: "Office & Location",
+    question: "Where is Al Arbab Travels located and can I visit in person for consultation?",
+    answer: "Yes, absolutely. Our office is centrally situated at Eagle Plaza, Mezzanine No. 121, Fazal-e-Haq Road, Blue Area, Islamabad. We welcome clients for in-person consultations, profile evaluations, and file reviews Monday through Saturday from 9:30 AM to 6:30 PM."
   },
   {
     category: "Documentation & Ties",

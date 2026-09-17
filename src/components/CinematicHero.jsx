@@ -205,7 +205,7 @@ export default function CinematicHero({ onOpenEligibility }) {
             <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: 'var(--gold-400)' }} />
             33.7128° N, 73.0645° E • ISLAMABAD, PK
           </span>
-          <span className="hidden-mobile">EST. 2012 • PREMIER TRAVEL ADVISORY</span>
+          <span className="hidden-mobile">FAMILY-RUN TRAVEL CONSULTANCY • BLUE AREA ISLAMABAD</span>
           <span>GLOBAL IMMIGRATION CONCIERGE</span>
         </div>
 

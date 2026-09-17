@@ -10,7 +10,7 @@ export const blogPosts = [
     image: "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=1000&q=80",
     excerpt: "Learn how to choose the correct embassy (Rule of First Entry vs Main Destination), avoid funds parking traps, and prepare an unshakeable dossier for Europe.",
     content: `
-      Applying for a Schengen visa on a Pakistani passport is notoriously challenging, but with methodical preparation and a transparent paper trail, our clients consistently achieve high approval outcomes.
+      Applying for a Schengen visa on a Pakistani passport is notoriously challenging. While European consulates make the final decision and no agency can promise or guarantee approvals, our meticulous file preparation, financial audits, and compliant documentation ensure applicants present the strongest possible file.
 
       ### 1. The Golden Rule: Determining the Right Embassy
       Under the Schengen Visa Code (Article 5), you must submit your application to:
@@ -96,10 +96,10 @@ export const testimonials = [
     id: 2,
     name: "Syed Danial Rizvi",
     location: "Lahore, Pakistan",
-    visaType: "France & Schengen 90-Day Tourist Visa",
+    visaType: "France & Schengen 90-Day Tourist Visa File Prep",
     rating: 5,
     date: "July 2026",
-    text: "Al Arbab Travels organized our complete European honeymoon itinerary. They arranged genuine hotel vouchers, verified flight bookings, travel insurance, and managed the VFS appointment in Lahore effortlessly. The glassmorphic website and prompt WhatsApp response made the entire process so reassuring.",
+    text: "Al Arbab Travels prepared our complete European honeymoon file. They arranged genuine hotel vouchers, verified flight bookings, travel insurance, and guided us for our VFS biometric appointment in Lahore effortlessly. Their file review gave us total confidence.",
     avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80"
   },
   {

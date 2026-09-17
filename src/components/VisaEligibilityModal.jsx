@@ -349,9 +349,11 @@ Please review my eligibility and advise on next steps.`;
                   </div>
                 </div>
                 <div style={{ textAlign: 'right' }}>
-                  <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>Estimated Approval</div>
-                  <div style={{ color: '#eed88a', fontWeight: 700, fontSize: '1.25rem', fontFamily: 'var(--font-heading)' }}>
-                    {hasPreviousRefusal.startsWith('Yes') ? 'Review Needed' : currentDest.approvalRate}
+                  <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>
+                    Service Scope
+                  </div>
+                  <div style={{ color: '#eed88a', fontWeight: 700, fontSize: '0.95rem', fontFamily: 'var(--font-heading)' }}>
+                    {hasPreviousRefusal.startsWith('Yes') ? 'Case Audit Required' : (currentDest.serviceScope || currentDest.approvalRate)}
                   </div>
                 </div>
               </div>
@@ -366,6 +368,21 @@ Please review my eligibility and advise on next steps.`;
                   <div style={{ fontWeight: 700, color: '#38bdf8' }}>{currentDest.processingTime.split('(')[0]}</div>
                 </div>
               </div>
+
+              {(currentDest.id === 'schengen' || currentDest.id === 'usa') && (
+                <div style={{
+                  marginTop: '0.75rem',
+                  padding: '6px 10px',
+                  borderRadius: '6px',
+                  background: 'rgba(56, 189, 248, 0.08)',
+                  border: '1px solid rgba(56, 189, 248, 0.2)',
+                  fontSize: '0.75rem',
+                  color: '#7dd3fc',
+                  lineHeight: 1.4
+                }}>
+                  ℹ️ <strong>Scope Notice:</strong> Application support &amp; file preparation only. We do not process, submit, or guarantee visa approvals.
+                </div>
+              )}
             </div>
 
             <div style={{ marginBottom: '1.5rem' }}>

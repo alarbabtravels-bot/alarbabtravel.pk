@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Search, ArrowRight, ShieldCheck, Award, CheckCircle2, ChevronDown, Sparkles, MapPin } from 'lucide-react';
+import { destinations } from '../data/destinationsData';
 
 export default function LandingHero({ onOpenEligibility }) {
   const [searchTerm, setSearchTerm] = useState('');
@@ -8,10 +9,20 @@ export default function LandingHero({ onOpenEligibility }) {
 
   const handleSearchSubmit = (e) => {
     e.preventDefault();
-    if (searchTerm.trim()) {
-      navigate(`/destinations?search=${encodeURIComponent(searchTerm.trim())}`);
-      const el = document.getElementById('popular-destinations');
-      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    const query = searchTerm.trim().toLowerCase();
+    if (query) {
+      const match = destinations.find(d => 
+        (d.slug && d.slug.toLowerCase() === query) ||
+        d.id.toLowerCase() === query || 
+        d.country.toLowerCase().includes(query) ||
+        query.includes(d.id.toLowerCase()) ||
+        d.aliases?.some(a => a.toLowerCase() === query)
+      );
+      if (match) {
+        navigate(`/destinations/${match.slug || match.id}`);
+      } else {
+        navigate('/destinations');
+      }
     }
   };
 
@@ -33,7 +44,7 @@ export default function LandingHero({ onOpenEligibility }) {
         backgroundImage: `
           linear-gradient(90deg, #050609 0%, rgba(5, 6, 9, 0.94) 38%, rgba(5, 6, 9, 0.62) 70%, rgba(5, 6, 9, 0.88) 100%),
           linear-gradient(180deg, rgba(5, 6, 9, 0.4) 0%, transparent 40%, #050609 100%),
-          url('/hero_travel_lux.jpg')
+          url('/hero_travel_lux.webp')
         `,
         backgroundSize: 'cover',
         backgroundPosition: 'center right',
@@ -143,7 +154,7 @@ export default function LandingHero({ onOpenEligibility }) {
               maxWidth: '580px',
               fontFamily: "'Inter', sans-serif"
             }}>
-              Your journey, handled end to end. From certified Umrah &amp; Hajj packages to worldwide visit visa processing, air ticketing, and verified hotel bookings with verified corporate guarantee.
+              Your journey, handled with meticulous care. Full assistance for Asian visit visas, certified Umrah &amp; Hajj packages, worldwide flight ticketing, and expert Schengen &amp; USA file preparation.
             </p>
 
             {/* Prominent Capsule Search Bar */}
@@ -321,8 +332,8 @@ export default function LandingHero({ onOpenEligibility }) {
                 fontSize: '0.8rem',
                 fontWeight: 600
               }}>
-                <CheckCircle2 size={15} color="#10b981" />
-                <span>98.4% Visa Approvals</span>
+                <MapPin size={15} color="#10b981" />
+                <span>Based in Blue Area, Islamabad</span>
               </div>
 
               <div style={{
@@ -338,7 +349,7 @@ export default function LandingHero({ onOpenEligibility }) {
                 fontWeight: 600
               }}>
                 <Award size={15} color="#e5a93c" />
-                <span>Registered Travel &amp; Visa Agency</span>
+                <span>Personalized Visa &amp; Travel Consultancy</span>
               </div>
 
               <div style={{
@@ -354,7 +365,7 @@ export default function LandingHero({ onOpenEligibility }) {
                 fontWeight: 600
               }}>
                 <ShieldCheck size={15} color="#38bdf8" />
-                <span>12,000+ Happy Travelers</span>
+                <span>Direct WhatsApp &amp; In-Person Support</span>
               </div>
             </div>
           </div>
@@ -530,7 +541,7 @@ export default function LandingHero({ onOpenEligibility }) {
                       Embassy file preparation &amp; appointment slots
                     </div>
                   </div>
-                  <span style={{ color: '#6ee7b7', fontSize: '0.8rem', fontWeight: 700 }}>Apply</span>
+                  <span style={{ color: '#6ee7b7', fontSize: '0.8rem', fontWeight: 700 }}>File Prep</span>
                 </div>
               </div>
 

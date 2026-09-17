@@ -3,7 +3,7 @@ import { useParams, useNavigate, Link } from 'react-router-dom';
 import { 
   Compass, GraduationCap, Briefcase, Building2, Plane, Hotel, 
   FileCheck2, CheckCircle2, ArrowRight, ShieldCheck, Sparkles, Clock, 
-  HelpCircle, ChevronDown, ChevronRight, ExternalLink
+  HelpCircle, ChevronDown, ChevronRight, ExternalLink, MapPin
 } from 'lucide-react';
 import SEO from '../components/SEO';
 import { services } from '../data/servicesData';
@@ -24,11 +24,9 @@ export default function Services({ onOpenEligibility }) {
   const [activeService, setActiveService] = useState(() => getMatchedService(serviceSlug));
   const [openFaqIndex, setOpenFaqIndex] = useState(0);
 
+  // Sync state when URL param changes
   useEffect(() => {
-    if (serviceSlug) {
-      const found = getMatchedService(serviceSlug);
-      setActiveService(found);
-    }
+    setActiveService(getMatchedService(serviceSlug));
   }, [serviceSlug]);
 
   const handleSelectService = (srv) => {
@@ -37,7 +35,7 @@ export default function Services({ onOpenEligibility }) {
   };
 
   const getIcon = (iconName) => {
-    switch(iconName) {
+    switch (iconName) {
       case 'Compass': return <Compass size={22} color="var(--gold-accent)" />;
       case 'GraduationCap': return <GraduationCap size={22} color="var(--gold-accent)" />;
       case 'Briefcase': return <Briefcase size={22} color="var(--gold-accent)" />;
@@ -45,6 +43,7 @@ export default function Services({ onOpenEligibility }) {
       case 'Plane': return <Plane size={22} color="var(--gold-accent)" />;
       case 'Hotel': return <Hotel size={22} color="var(--gold-accent)" />;
       case 'FileCheck2': return <FileCheck2 size={22} color="var(--gold-accent)" />;
+      case 'ShieldCheck': return <ShieldCheck size={22} color="var(--gold-accent)" />;
       default: return <Compass size={22} color="var(--gold-accent)" />;
     }
   };
@@ -66,30 +65,32 @@ export default function Services({ onOpenEligibility }) {
         "name": "Services",
         "item": "https://alarbabtravel.pk/services"
       },
-      {
+      ...(serviceSlug ? [{
         "@type": "ListItem",
         "position": 3,
         "name": activeService.title,
         "item": `https://alarbabtravel.pk/services/${activeService.slug}`
-      }
+      }] : [])
     ]
   };
 
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": activeService.title,
+    "serviceType": activeService.title,
     "provider": {
       "@type": "TravelAgency",
-      "@id": "https://alarbabtravel.pk/#organization",
-      "name": "Al Arbab Travels (Pvt) Ltd"
+      "name": "Al Arbab Travels (Pvt) Ltd",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Eagle Plaza, Mezzanine 121, Fazal-e-Haq Road, Blue Area",
+        "addressLocality": "Islamabad",
+        "addressCountry": "PK"
+      }
     },
-    "serviceType": activeService.title,
     "description": activeService.summary,
-    "areaServed": "Pakistan",
     "offers": {
       "@type": "Offer",
-      "priceCurrency": "PKR",
       "availability": "https://schema.org/InStock"
     }
   };
@@ -110,20 +111,28 @@ export default function Services({ onOpenEligibility }) {
   const pageSchemas = [breadcrumbSchema, serviceSchema];
   if (faqSchema) pageSchemas.push(faqSchema);
 
+  const pageTitle = serviceSlug 
+    ? `${activeService.title} | Al Arbab Travels Islamabad`
+    : "Visa Consultancy, Umrah & Travel Services | Al Arbab Travels Islamabad";
+
+  const pageDescription = serviceSlug
+    ? (activeService.summary.length > 155 ? `${activeService.summary.substring(0, 152)}...` : activeService.summary)
+    : "Comprehensive travel services in Islamabad: full Asian visit visas, Umrah packages, flight ticketing, and expert file preparation for Schengen & USA.";
+
   return (
     <>
       <SEO 
-        title={`${activeService.title} | Al Arbab Travels Islamabad`}
-        description={activeService.summary.length > 155 ? `${activeService.summary.substring(0, 152)}...` : activeService.summary}
-        keywords={`${activeService.title}, visa services Islamabad, Al Arbab Travels, Pakistan visa consultant, Umrah packages 2026, air ticketing Pakistan`}
-        canonicalPath={`/services/${activeService.slug}`}
+        title={pageTitle}
+        description={pageDescription}
+        keywords={`${activeService.title}, Asian visa processing Islamabad, Schengen visa file preparation Pakistan, USA visa application support Islamabad, Umrah packages 2026, air ticketing Pakistan`}
+        canonicalPath={serviceSlug ? `/services/${activeService.slug}` : "/services"}
         schema={pageSchemas}
       />
 
       <main style={{ paddingBottom: '5rem' }}>
-        {/* Banner */}
+        {/* Page Hero Banner */}
         <section style={{
-          paddingTop: '3.5rem',
+          paddingTop: '4rem',
           paddingBottom: '3rem',
           position: 'relative',
           borderBottom: '1px solid var(--border-subtle)'
@@ -131,22 +140,28 @@ export default function Services({ onOpenEligibility }) {
           <div className="container">
             {/* Breadcrumb Visual Trail */}
             <nav aria-label="Breadcrumb" style={{ marginBottom: '1.25rem', fontSize: '0.82rem', color: 'var(--text-muted)' }}>
-              <ol style={{ listStyle: 'none', display: 'flex', alignItems: 'center', gap: '8px', padding: 0, margin: 0 }}>
+              <ol style={{ listStyle: 'none', display: 'flex', alignItems: 'center', gap: '8px', padding: 0, margin: 0, flexWrap: 'wrap' }}>
                 <li>
                   <Link to="/" style={{ color: 'var(--text-muted)', textDecoration: 'none' }}>Home</Link>
                 </li>
                 <li><ChevronRight size={13} /></li>
                 <li>
-                  <Link to="/services" style={{ color: 'var(--text-muted)', textDecoration: 'none' }}>Services</Link>
+                  <Link to="/services" style={{ color: serviceSlug ? 'var(--text-muted)' : 'var(--gold-accent)', textDecoration: 'none' }}>
+                    Services
+                  </Link>
                 </li>
-                <li><ChevronRight size={13} /></li>
-                <li style={{ color: 'var(--gold-accent)', fontWeight: 600 }}>{activeService.title}</li>
+                {serviceSlug && (
+                  <>
+                    <li><ChevronRight size={13} /></li>
+                    <li style={{ color: 'var(--gold-accent)', fontWeight: 600 }}>{activeService.title}</li>
+                  </>
+                )}
               </ol>
             </nav>
 
             <div style={{ maxWidth: '820px' }}>
               <div className="badge-gold" style={{ marginBottom: '0.85rem' }}>
-                <Sparkles size={14} /> Official Service Portfolio
+                <MapPin size={14} /> Al Arbab Travels (Pvt) Ltd · Blue Area, Islamabad
               </div>
               <h1 style={{ fontSize: 'clamp(2.2rem, 4.2vw, 3.2rem)', fontWeight: 700, lineHeight: 1.2, marginBottom: '1rem', color: '#ffffff' }}>
                 {activeService.title}
@@ -161,7 +176,7 @@ export default function Services({ onOpenEligibility }) {
         {/* Interactive Services Explorer */}
         <section className="section-py">
           <div className="container">
-            <div className="offset-grid" style={{ alignItems: 'flex-start' }}>
+            <div className="services-layout-grid">
               {/* Left Column: Service Selector Tabs */}
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.65rem' }}>
                 <div style={{ fontSize: '0.8rem', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--text-muted)', marginBottom: '0.5rem' }}>
@@ -232,7 +247,7 @@ export default function Services({ onOpenEligibility }) {
               >
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1rem' }}>
                   <div className="badge-gold">
-                    <ShieldCheck size={14} /> Verified Service Guarantee
+                    <ShieldCheck size={14} /> {activeService.id === 'visa-services' ? 'Asian Processing & Schengen/USA File Prep' : 'Verified Service Scope'}
                   </div>
                   <span style={{ fontSize: '0.82rem', color: 'var(--gold-accent)', fontWeight: 600, fontFamily: 'var(--font-heading)' }}>
                     {activeService.stats}
@@ -478,6 +493,18 @@ export default function Services({ onOpenEligibility }) {
       </main>
 
       <style>{`
+        .services-layout-grid {
+          display: grid;
+          grid-template-columns: minmax(280px, 340px) 1fr;
+          gap: 2.25rem;
+          align-items: flex-start;
+        }
+        @media (max-width: 991px) {
+          .services-layout-grid {
+            grid-template-columns: 1fr !important;
+            gap: 2rem !important;
+          }
+        }
         .related-service-card:hover {
           border-color: var(--gold-accent) !important;
           transform: translateY(-2px);

@@ -31,7 +31,7 @@ const servicePages = services.map(s => ({
 }));
 
 const destinationPages = destinations.map(d => ({
-  url: `/destinations/${d.id}`,
+  url: `/destinations/${d.slug || d.id}`,
   priority: '0.85',
   changefreq: 'weekly'
 }));

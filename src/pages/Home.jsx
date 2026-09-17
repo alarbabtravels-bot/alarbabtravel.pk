@@ -15,44 +15,44 @@ export default function Home({ onOpenEligibility }) {
     {
       id: 'malaysia',
       title: 'Malaysia',
-      subtitle: 'Work & Visit Hub',
-      image: '/dest_malaysia.jpg',
-      link: '/destinations?search=Malaysia'
+      subtitle: '30-Day eVisa & Employment Pass Support · Full Assistance',
+      image: '/dest_malaysia.webp',
+      link: '/destinations/malaysia'
     },
     {
       id: 'thailand',
       title: 'Thailand',
-      subtitle: 'Tourist & Work Permits',
+      subtitle: '60-Day Tourist eVisa & DTV Nomad Support · Full Assistance',
       image: 'https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=800&q=80',
-      link: '/destinations?search=Thailand'
+      link: '/destinations/thailand'
     },
     {
       id: 'singapore',
       title: 'Singapore',
-      subtitle: 'Fast e-Visa & Entry',
+      subtitle: 'Electronic Visit Visa & Family Holiday Entry · Full Assistance',
       image: 'https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=800&q=80',
-      link: '/destinations?search=Singapore'
+      link: '/destinations/singapore'
     },
     {
       id: 'indonesia',
       title: 'Indonesia',
-      subtitle: 'Bali & E-VoA Entry',
+      subtitle: 'Bali Electronic Visa on Arrival (e-VoA) · Full Assistance',
       image: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80',
-      link: '/destinations?search=Indonesia'
+      link: '/destinations/indonesia'
     },
     {
       id: 'umrah',
       title: 'Saudi Arabia',
-      subtitle: 'Umrah & Sacred Ziyarat',
-      image: '/dest_makkah.jpg',
-      link: '/destinations?search=Saudi'
+      subtitle: 'Nusuk Umrah Packages & Electronic Visas · Full Service',
+      image: '/dest_makkah.webp',
+      link: '/destinations/saudi-arabia'
     },
     {
       id: 'turkey',
       title: 'Turkey',
-      subtitle: 'Historical & Transit',
-      image: '/dest_turkey.jpg',
-      link: '/destinations?search=Turkey'
+      subtitle: 'Sticker Visa Dossier & Transit e-Visa · File Prep & Support',
+      image: '/dest_turkey.webp',
+      link: '/destinations/turkey'
     }
   ];
 
@@ -63,12 +63,12 @@ export default function Home({ onOpenEligibility }) {
       slug: 'visa-services',
       category: 'IMMIGRATION & PERMITS',
       title: 'Work Visas & Global Visa Consultancy',
-      badge: 'Work Visas & File Prep Specialist',
+      badge: 'Asian Processing · Schengen/USA File Prep',
       badgeColor: '#eed88a',
       badgeBg: 'rgba(238, 216, 138, 0.12)',
       badgeBorder: 'rgba(238, 216, 138, 0.35)',
-      highlights: ['Work Visas & Permits', 'Malaysia & Gulf Work', 'Schengen File Prep Only', 'USA DS-160 Prep Only', '98.4% Approval'],
-      description: 'Specialized overseas work visas and employment permits (Malaysia, Gulf, Central Asia). For Schengen & USA, we provide expert File Preparation Only (financial audits, DS-160 drafting, and mock interview coaching).',
+      highlights: ['Asian Visit Visas (Full Service)', 'Overseas Work Visa Advisory', 'Schengen File Preparation Only', 'USA DS-160 & Interview Prep', 'Blue Area In-Person Desk'],
+      description: 'Complete visa filing assistance for Malaysia, UAE, and Thailand visit visas alongside overseas employment file advisory. For European Schengen and USA B1/B2 visas, we provide professional file preparation only—covering document checklists, DS-160 drafting, financial presentation, and embassy interview coaching without false approval guarantees.',
       actionText: 'Check Visa Requirements',
       isHero: true,
       gridSpan: 'hero-card-1',
@@ -84,12 +84,12 @@ export default function Home({ onOpenEligibility }) {
       slug: 'umrah-hajj',
       category: 'SACRED PILGRIMAGES',
       title: 'Hajj & Umrah Pilgrimage Packages',
-      badge: '0–100m Courtyard Access',
+      badge: 'Full Umrah Package & Visa Processing',
       badgeColor: '#34d399',
       badgeBg: 'rgba(52, 211, 153, 0.12)',
       badgeBorder: 'rgba(52, 211, 153, 0.35)',
-      highlights: ['Makkah Clock Tower', 'Madinah Courtyards', 'Haramain Bullet Train', 'VIP GMC Transfers'],
-      description: 'Premium luxury and customized Umrah packages with verified Nusuk eVisas, high-speed rail tickets, 40kg+ Zamzam allowance, and dedicated on-ground scholar guidance.',
+      highlights: ['Makkah Clock Tower Hotels', 'Madinah Courtyard Properties', 'Haramain High-Speed Train', 'Direct Jeddah & Madinah Flights'],
+      description: 'End-to-end Umrah arrangements featuring official Nusuk visa processing, verified 3-star to 5-star hotel vouchers within walking distance of the Harams, high-speed rail bookings, and reliable ground transportation.',
       actionText: 'Explore Umrah Packages',
       isHero: true,
       gridSpan: 'hero-card-2',
@@ -108,12 +108,12 @@ export default function Home({ onOpenEligibility }) {
       slug: 'flights',
       category: 'AIR TICKETING',
       title: 'Flights & Global Route Management',
-      badge: '85+ IATA Airlines',
+      badge: 'Full Air Ticketing Service',
       badgeColor: '#38bdf8',
       badgeBg: 'rgba(56, 189, 248, 0.12)',
       badgeBorder: 'rgba(56, 189, 248, 0.35)',
-      highlights: ['PIA & Saudia Direct', 'Emirates & Qatar', 'Flexible Rebooking'],
-      description: 'IATA-accredited international and domestic ticketing with negotiated corporate fares, flexible date reissues, and 24/7 flight desk monitoring.',
+      highlights: ['PIA, Saudia, Emirates & Qatar', 'Real-Time GDS Seat Allocation', 'Flexible Reissue Assistance', 'Direct WhatsApp Fare Support'],
+      description: 'Comprehensive domestic and international flight reservation service. We search global distribution systems for optimized routings, transparent baggage allowances, urgent date reissues, and tailored corporate itineraries.',
       actionText: 'Find Route Fares',
       icon: (
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
@@ -123,15 +123,15 @@ export default function Home({ onOpenEligibility }) {
     },
     {
       id: 'hotel-accommodations',
-      slug: 'hotels',
+      slug: 'hotel-booking',
       category: 'HOSPITALITY',
       title: 'Hotel & Accommodation Booking',
-      badge: 'Wholesale Rates',
+      badge: 'Embassy-Compliant Reservations',
       badgeColor: '#eed88a',
       badgeBg: 'rgba(238, 216, 138, 0.12)',
       badgeBorder: 'rgba(238, 216, 138, 0.35)',
-      highlights: ['5-Star Luxury Suites', 'Embassy Vouchers', 'Serviced Apartments'],
-      description: 'Instant confirmed vouchers recognized for embassy visa filings across Dubai, Istanbul, London, and Saudi Arabia with guaranteed late checkouts.',
+      highlights: ['Confirmed Hotel Vouchers', 'Embassy-Acceptable Bookings', 'Budget to 5-Star Properties', 'Dubai, London, Istanbul & Saudi'],
+      description: 'Hotel reservations with verified confirmation vouchers suitable for visa submissions and personal travel, securing competitive wholesale rates across major destinations including Saudi Arabia, UAE, Turkey, and Europe.',
       actionText: 'Browse Accommodations',
       icon: (
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#eed88a" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
@@ -144,15 +144,15 @@ export default function Home({ onOpenEligibility }) {
     },
     {
       id: 'corporate-group',
-      slug: 'tours',
+      slug: 'group-corporate-travel',
       category: 'EXECUTIVE TOURS',
       title: 'Group & Corporate Travel',
-      badge: 'Tailor-Made Itineraries',
+      badge: 'Curated International Packages',
       badgeColor: '#c084fc',
       badgeBg: 'rgba(192, 132, 252, 0.12)',
       badgeBorder: 'rgba(192, 132, 252, 0.35)',
-      highlights: ['Corporate Offsites', 'Trade Delegations', 'Family Tours'],
-      description: 'Turnkey delegation logistics for business summits, trade expos, and family groups with private coach transfers and dedicated tour directors.',
+      highlights: ['Custom Family Holiday Itineraries', 'Corporate Delegation Logistics', 'Private Airport & Intercity Coaches', 'Dedicated Travel Coordinator'],
+      description: 'Custom-tailored international tour packages and group logistics for corporate delegations, conferences, trade exhibitions, and family vacations with coordinated flights, accommodations, and guided excursions.',
       actionText: 'Plan Group Tour',
       icon: (
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#c084fc" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
@@ -165,15 +165,15 @@ export default function Home({ onOpenEligibility }) {
     },
     {
       id: 'insurance-compliance',
-      slug: 'document-attestation',
+      slug: 'travel-insurance',
       category: 'DOCUMENT CARE',
       title: 'Travel Insurance & Support',
-      badge: '100% Embassy Compliant',
+      badge: 'Statutory Travel Protection',
       badgeColor: '#2dd4bf',
       badgeBg: 'rgba(45, 212, 191, 0.12)',
       badgeBorder: 'rgba(45, 212, 191, 0.35)',
-      highlights: ['Schengen €30K+ Cover', 'MOFA Attestation', '24/7 Desk'],
-      description: 'Embassy-compliant international medical travel insurance issued instantly alongside expedited MOFA, IBCC, and foreign embassy document attestations.',
+      highlights: ['€30,000+ Schengen Medical Cover', 'Instant Policy Issuance', 'COVID-19 & Repatriation Included', 'Diplomatic Enclave Proximity'],
+      description: 'Embassy-approved international medical travel insurance with mandatory €30,000 / $50,000 coverage issued instantly. Our Blue Area office also assists travelers with document attestation guidance for diplomatic submissions.',
       actionText: 'Verify Insurance & Docs',
       icon: (
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2dd4bf" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
@@ -501,7 +501,7 @@ export default function Home({ onOpenEligibility }) {
                   margin: 0,
                   fontFamily: "'Inter', sans-serif"
                 }}>
-                  From accredited embassy visa casework and licensed Umrah pilgrimages to worldwide flight ticketing and guaranteed hotel accommodations, our senior consultants in Blue Area Islamabad handle every detail of your journey with meticulous care.
+                  From full-assistance Asian visit visas and complete Umrah pilgrimages to worldwide flight ticketing and expert Schengen &amp; USA file preparation, our senior consultants in Blue Area Islamabad handle every detail with meticulous care.
                 </p>
               </div>
 
@@ -837,7 +837,7 @@ export default function Home({ onOpenEligibility }) {
         {/* =========================================================================
             5. BOTTOM CTA BANNER (SCENIC LAKE) & MAJOR AIRLINES STRIP
             ========================================================================= */}
-        <section id="plan-trip-banner" style={{ background: 'transparent', padding: '2rem 0 2.5rem 0' }}>
+        <section id="plan-trip-banner" style={{ background: 'transparent', padding: '3.5rem 0 4rem 0' }}>
           <div className="container" style={{ maxWidth: '1360px', margin: '0 auto', padding: '0 1.25rem' }}>
             <div style={{
               display: 'grid',
@@ -858,7 +858,7 @@ export default function Home({ onOpenEligibility }) {
                 padding: '1.5rem 2rem',
                 backgroundImage: `
                   linear-gradient(90deg, rgba(5, 12, 20, 0.95) 0%, rgba(5, 12, 20, 0.78) 55%, rgba(5, 12, 20, 0.45) 100%),
-                  url('/cta_mountain_lake.jpg')
+                  url('/cta_mountain_lake.webp')
                 `,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
@@ -1000,13 +1000,16 @@ export default function Home({ onOpenEligibility }) {
                     <img 
                       src="/airlines/pia_light.png" 
                       alt="PIA - Pakistan International Airlines logo"
+                      width="80"
+                      height="28"
+                      loading="lazy"
+                      decoding="async"
                       style={{
                         height: '28px',
                         width: 'auto',
                         objectFit: 'contain',
                         display: 'block'
                       }}
-                      loading="lazy"
                     />
                   </div>
 
@@ -1015,13 +1018,16 @@ export default function Home({ onOpenEligibility }) {
                     <img 
                       src="/airlines/saudia_white.png" 
                       alt="Saudia Airlines logo"
+                      width="90"
+                      height="28"
+                      loading="lazy"
+                      decoding="async"
                       style={{
                         height: '28px',
                         width: 'auto',
                         objectFit: 'contain',
                         display: 'block'
                       }}
-                      loading="lazy"
                     />
                   </div>
 
@@ -1030,13 +1036,16 @@ export default function Home({ onOpenEligibility }) {
                     <img 
                       src="/airlines/qatar_white.png" 
                       alt="Qatar Airways logo"
+                      width="95"
+                      height="24"
+                      loading="lazy"
+                      decoding="async"
                       style={{
                         height: '24px',
                         width: 'auto',
                         objectFit: 'contain',
                         display: 'block'
                       }}
-                      loading="lazy"
                     />
                   </div>
 
@@ -1045,13 +1054,16 @@ export default function Home({ onOpenEligibility }) {
                     <img 
                       src="/airlines/emirates.svg" 
                       alt="Emirates Airlines logo"
+                      width="90"
+                      height="24"
+                      loading="lazy"
+                      decoding="async"
                       style={{
                         height: '24px',
                         width: 'auto',
                         objectFit: 'contain',
                         display: 'block'
                       }}
-                      loading="lazy"
                     />
                   </div>
 
@@ -1060,13 +1072,16 @@ export default function Home({ onOpenEligibility }) {
                     <img 
                       src="/airlines/flyjinnah.png" 
                       alt="Fly Jinnah Airlines logo"
+                      width="85"
+                      height="34"
+                      loading="lazy"
+                      decoding="async"
                       style={{
                         height: '34px',
                         width: 'auto',
                         objectFit: 'contain',
                         display: 'block'
                       }}
-                      loading="lazy"
                     />
                   </div>
 
@@ -1075,13 +1090,16 @@ export default function Home({ onOpenEligibility }) {
                     <img 
                       src="/airlines/airblue_white.png" 
                       alt="Airblue Airlines logo"
+                      width="85"
+                      height="21"
+                      loading="lazy"
+                      decoding="async"
                       style={{
                         height: '21px',
                         width: 'auto',
                         objectFit: 'contain',
                         display: 'block'
                       }}
-                      loading="lazy"
                     />
                   </div>
 
@@ -1190,6 +1208,11 @@ export default function Home({ onOpenEligibility }) {
           .airline-logos-strip {
             gap: 14px 20px !important;
             justify-content: flex-start !important;
+          }
+        }
+        @media (max-width: 480px) {
+          .destinations-cards-row {
+            grid-template-columns: 1fr !important;
           }
         }
       `}</style>

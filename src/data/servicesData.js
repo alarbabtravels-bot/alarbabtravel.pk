@@ -5,7 +5,7 @@ export const services = [
     aliases: ["umrah", "umrah-packages"],
     title: "Umrah & Hajj Pilgrimage Packages",
     icon: "Compass",
-    tagline: "Spiritually fulfilling pilgrimages with 5-star clock tower stays and VIP transport",
+    tagline: "Nusuk electronic visas, 5-star Makkah clock tower stays, direct flights & bullet train transfers",
     summary: "Al Arbab Travels provides end-to-end luxury and economy Umrah and Hajj packages for individuals, couples, and family groups departing from Islamabad, Lahore, Karachi, and Peshawar. We manage Nusuk visa processing, verified hotel vouchers within 100 meters of the Holy Haram in Makkah and the Prophet's Mosque in Madinah, direct airline ticketing with PIA and Saudia, and private high-speed Haramain bullet train transfers.",
     overview: `Performing Umrah and Hajj is among the most revered spiritual milestones in a believer's lifetime. At Al Arbab Travels (Pvt) Ltd, our specialized Umrah Caseworkers in Blue Area, Islamabad ensure your sacred pilgrimage is conducted with absolute tranquility, dignity, and meticulous care. Under the official regulations and guidelines of the Ministry of Hajj and Umrah of the Kingdom of Saudi Arabia, we provide complete visa processing via the official Nusuk portal, ensuring zero embassy delays or documentation bottlenecks.
 
@@ -26,7 +26,7 @@ Al Arbab Travels pairs each family and group with dedicated Pakistani mutawwifs 
       "24/7 on-ground Pakistani assistance in Makkah and Madinah"
     ],
     idealFor: "Pilgrims, families with elderly or children, executive VIP delegations",
-    stats: "12,000+ Satisfied Pilgrims Served",
+    stats: "Full Package & Visa Processing",
     faqs: [
       {
         question: "Can Pakistani passport holders apply for an Umrah visa on a tourist eVisa?",
@@ -47,7 +47,7 @@ Al Arbab Travels pairs each family and group with dedicated Pakistani mutawwifs 
     ],
     relatedServices: [
       { title: "Air Ticketing & Route Concierge", slug: "flights", desc: "Book direct PIA and Saudia flights with 40kg+ baggage allowances for Zamzam water." },
-      { title: "Luxury Hotel Bookings", slug: "hotels", desc: "Official reservation vouchers for premier Makkah Clock Tower & Madinah hotels." },
+      { title: "Luxury Hotel Bookings", slug: "hotel-booking", desc: "Official reservation vouchers for premier Makkah Clock Tower & Madinah hotels." },
       { title: "Visit & Tourist Visas", slug: "visa-services", desc: "Combine your Umrah pilgrimage with a Dubai or Turkey holiday stopover." }
     ]
   },
@@ -57,12 +57,12 @@ Al Arbab Travels pairs each family and group with dedicated Pakistani mutawwifs 
     aliases: ["visit-visas"],
     title: "Worldwide Visit & Tourist Visa Services",
     icon: "Compass",
-    tagline: "High-approval visa filing with bulletproof financial auditing and embassy-compliant dossiers",
-    summary: "Comprehensive visa facilitation for Pakistani passport holders. We specialize in overseas employment & work permits (Malaysia, Gulf, Central Asia) and tourist visas. For Schengen Area and the United States (USA), our services are strictly Expert File Preparation Only (DS-160 drafting, VFS appointment booking, financial statement audit, and embassy interview coaching).",
-    overview: `Securing an international visa or employment permit on a Pakistani passport requires meticulous statutory compliance. Consular officers at the British High Commission, European Schengen embassies (Germany, France, Italy, Spain), and the American and Canadian consulates evaluate each file with extreme statutory scrutiny. 
+    tagline: "Complete visa filing for Asian countries & Umrah; expert embassy file preparation for Schengen & USA",
+    summary: "Full visa processing for Asian destinations (Malaysia, Thailand, Singapore, Indonesia, UAE, Azerbaijan, Gulf) and authorized Umrah. For European Schengen Area and the United States (USA), our services are strictly Expert File Preparation Only (document checklist review, application form completion, financial statement audit, DS-160 drafting, and mock interview coaching).",
+    overview: `Securing an international visa or employment permit on a Pakistani passport requires meticulous statutory compliance. Consular officers at European Schengen embassies (Germany, France, Italy, Spain) and the American Embassy/Consulates evaluate each file with extreme statutory scrutiny. 
 
-> **Important Advisory — Scope of Services:**
-> Al Arbab Travels (Pvt) Ltd specializes in **overseas work visas and employment permits** for Malaysia, Gulf countries (Saudi Arabia, UAE, Qatar, Bahrain), and Central Asia. For **Schengen States and the United States (USA)**, our service is strictly **File Preparation Only** (DS-160 lodgement, VFS/consular appointment booking, 6-month financial statement audit, cover letter drafting, and mock interview coaching). As biometric enrollment and consular interviews legally mandate the personal appearance of the applicant, we do not promise third-party submission or guaranteed outcomes.
+> **Important Service Scope Advisory:**
+> Al Arbab Travels (Pvt) Ltd provides **complete visa processing and submission assistance** for Asian destinations (Malaysia, Thailand, Singapore, Indonesia, UAE, Azerbaijan, Gulf countries) and Umrah pilgrimages. For **European Schengen States and the United States (USA)**, our service is strictly **File Preparation Only** (document verification, form completion, 6-month financial statement audit, DS-160 electronic petition drafting, and mock interview coaching). Because European consulates and the US Embassy legally mandate personal in-person biometric enrollment and consular interviews by the applicant, we do not process, submit, or guarantee visa approvals for Schengen or USA applications.
 
 ### Financial Auditing & Defeating 'Funds Parking'
 The cornerstone of a successful visa application is proving genuine intent and strong economic ties to Pakistan under UK Immigration Rule Appendix V 4.2 and Schengen Visa Code Article 32. Our specialized financial team performs a rigorous 6-month bank statement audit to eliminate 'funds parking' concerns. We ensure your declared monthly disposable income matches your salary credits, FBR Active Taxpayer List (ATL) filings, business registration certificates (SECP/Chamber of Commerce), and property wealth statements. Every credit transaction is corroborated with authentic legal paper trails.
@@ -70,8 +70,8 @@ The cornerstone of a successful visa application is proving genuine intent and s
 ### Tailored Itineraries & Genuine Reservation Dossiers
 Embassies reject generic applications with vague travel intentions. Our Islamabad caseworkers craft detailed, personalized day-by-day itineraries that justify your trip duration, city transitions, and internal transit. We integrate official verifiable PNR airline reservations and consulate-compliant hotel booking vouchers issued through global distribution systems (GDS). Furthermore, we provide certified €30,000 to $50,000 Schengen-compliant travel medical insurance policies with zero deductibles and full COVID/emergency medical evacuation coverage.
 
-### Refusal Turnarounds & Administrative Appeals
-For applicants facing previous visa refusals from the UK, Canada, USA, or Schengen states, our Casework Directorate conducts forensic refusal audits. We request official GCMS notes from Immigration, Refugees and Citizenship Canada (IRCC) or analyze the specific refusal paragraphs of UKVI decision letters. We identify the exact evidentiary gaps, address past concerns with objective third-party proof, and draft compelling legal representation letters that have reversed hundreds of previous refusals. With our verified 98.4% success record, Al Arbab Travels provides Pakistan's most respected visa advisory.`,
+### Refusal Turnarounds & Administrative File Restructuring
+For applicants facing previous visa refusals from the UK, Canada, USA, or Schengen states, our Casework Directorate conducts forensic refusal audits. We analyze the specific refusal paragraphs of consular decision letters, identify the exact evidentiary gaps, address past concerns with objective third-party proof, and draft compelling legal representation letters. With our rigorous compliance audits and meticulous file preparation, Al Arbab Travels provides Pakistan's most respected visa advisory.`,
     deliverables: [
       "Initial profile evaluation & personalized document checklist",
       "VFS Global, Gerry's Visa Drop Box, and embassy appointment scheduling",
@@ -81,7 +81,7 @@ For applicants facing previous visa refusals from the UK, Canada, USA, or Scheng
       "6-Month bank statement cash-flow and source-of-funds compliance audit"
     ],
     idealFor: "Tourists, family visitors, holiday travelers, conference delegates, past refusal cases",
-    stats: "98.4% Visa Success Rate",
+    stats: "Asian Full Processing · Schengen/USA File Prep",
     faqs: [
       {
         question: "How much bank balance is recommended for a UK or Schengen visit visa from Pakistan?",
@@ -102,7 +102,7 @@ For applicants facing previous visa refusals from the UK, Canada, USA, or Scheng
     ],
     relatedServices: [
       { title: "Air Ticketing & Route Concierge", slug: "flights", desc: "Obtain official verifiable PNR flight bookings required for embassy visa dossiers." },
-      { title: "Luxury Hotel Bookings", slug: "hotels", desc: "Embassy-compliant confirmed accommodation vouchers without advance non-refundable payments." },
+      { title: "Luxury Hotel Bookings", slug: "hotel-booking", desc: "Embassy-compliant confirmed accommodation vouchers without advance non-refundable payments." },
       { title: "Document Attestation & Legalization", slug: "document-attestation", desc: "Fast-track MOFA, IBCC, HEC, and embassy stamp attestations in Islamabad." }
     ]
   },
@@ -112,18 +112,18 @@ For applicants facing previous visa refusals from the UK, Canada, USA, or Scheng
     aliases: ["flight-ticketing"],
     title: "Air Ticketing & Global Route Concierge",
     icon: "Plane",
-    tagline: "IATA-approved reservations, wholesale airline fares, and official verifiable PNRs for visas",
+    tagline: "Airline reservation console ticketing, competitive international fares & verifiable embassy PNRs",
     summary: "Authorized ticketing for international and domestic carriers including Pakistan International Airlines (PIA), Saudia, Emirates, Qatar Airways, Turkish Airlines, British Airways, Flydubai, and Airblue. We offer competitive seat pricing, flexible date re-routing, student 40kg baggage allowances, and embassy-compliant reservation holds.",
     overview: `Air travel planning requires speed, competitive pricing, and ironclad ticketing reliability. As an authorized travel agency in Islamabad, Al Arbab Travels (Pvt) Ltd connects directly to major Global Distribution Systems (GDS) including Amadeus, Sabre, and Travelport Galileo. Whether you require round-trip business class tickets to London, multi-city itineraries across North America, or domestic connections between Islamabad, Karachi, Skardu, and Gilgit, our route concierge team delivers the most competitive fares.
 
 ### Verifiable Live PNR Holds for Embassy Visa Submissions
-For visa applicants across Pakistan, securing an official, verifiable flight itinerary is a non-negotiable embassy requirement. We generate live PNR reservations that consular officers can verify directly on airline websites. Unlike dubious dummy tickets generated through unverified software, our reservations are lodged through official IATA airline consoles, ensuring complete authenticity during embassy background checks and eliminating the risk of fraud refusal flags.
+For visa applicants across Pakistan, securing an official, verifiable flight itinerary is a non-negotiable embassy requirement. We generate live PNR reservations that consular officers can verify directly on airline websites. Unlike dubious dummy tickets generated through unverified software, our reservations are lodged through official airline consoles and global distribution networks, ensuring complete authenticity during embassy background checks and eliminating the risk of fraud refusal flags.
 
 ### Special Corporate, Family & Student Baggage Fares
 Our corporate and group travel desk coordinates flight schedules for Umrah delegations, sports teams, trade missions, and student cohorts traveling to the UK, Canada, Australia, and Europe. We negotiate specialized student fares offering complimentary 40kg to 46kg baggage allowances (two full 23kg pieces), zero-fee initial date adjustments, and 24/7 disruption support. Families traveling with young children benefit from pre-assigned bassinet seating and special dietary meal confirmations.
 
 ### 24/7 Re-routing, Date Changes & Schedule Disruption Support
-Airline schedules are subject to weather delays, technical cancellations, and transit changes. When disruptions happen, commercial passengers face hours of automated airline telephone queues. Al Arbab Travels operates a dedicated 24/7 flight concierge desk in Blue Area, Islamabad. Our licensed ticketing agents re-route passengers, re-issue tickets, and process refunds directly through our airline agent consoles, guaranteeing you never get stranded at an international transit airport.`,
+Airline schedules are subject to weather delays, technical cancellations, and transit changes. When disruptions happen, commercial passengers face hours of automated airline telephone queues. Al Arbab Travels operates a dedicated 24/7 flight concierge desk in Blue Area, Islamabad. Our dedicated ticketing consultants re-route passengers, re-issue tickets, and process refunds directly through our airline agent consoles, guaranteeing you never get stranded at an international transit airport.`,
     deliverables: [
       "Official live verifiable PNR ticket holds for embassy visa submissions",
       "Wholesale corporate and individual fares on PIA, Saudia, Emirates, and Qatar Airways",
@@ -133,7 +133,7 @@ Airline schedules are subject to weather delays, technical cancellations, and tr
       "Seat pre-selection, bassinet requests, and specialized halal meal confirmations"
     ],
     idealFor: "International holidaymakers, Umrah travelers, corporate executives, students moving abroad",
-    stats: "Official IATA Partner Rates",
+    stats: "Full Air Ticketing Service",
     faqs: [
       {
         question: "Can embassies verify the flight reservations issued by Al Arbab Travels?",
@@ -154,17 +154,17 @@ Airline schedules are subject to weather delays, technical cancellations, and tr
     ],
     relatedServices: [
       { title: "Umrah & Hajj Packages", slug: "umrah-hajj", desc: "Book direct flights to Jeddah and Madinah with guaranteed Zamzam allowances." },
-      { title: "Visit & Tourist Visas", slug: "visa-services", desc: "Pair your flight booking with our 98.4% success rate visa application service." },
-      { title: "Luxury Hotel Bookings", slug: "hotels", desc: "Seamless hotel vouchers matching your exact flight arrival and departure dates." }
+      { title: "Visit & Tourist Visas", slug: "visa-services", desc: "Pair your flight booking with our full Asian visa assistance or Schengen/USA file preparation." },
+      { title: "Luxury Hotel Bookings", slug: "hotel-booking", desc: "Seamless hotel vouchers matching your exact flight arrival and departure dates." }
     ]
   },
   {
-    id: "hotels",
-    slug: "hotels",
-    aliases: ["hotel-bookings"],
+    id: "hotel-booking",
+    slug: "hotel-booking",
+    aliases: ["hotels", "hotel-bookings"],
     title: "Worldwide Hotel & Resort Bookings",
     icon: "Hotel",
-    tagline: "Curated worldwide luxury stays and embassy-compliant hotel reservation vouchers",
+    tagline: "Instant confirmed worldwide accommodation vouchers recognized by embassies with zero prepayment risk",
     summary: "Guaranteed accommodation bookings across 500,000+ properties globally. From luxury 5-star properties in Makkah, Madinah, London, Dubai, and Istanbul to boutique resorts in the Maldives, Bali, and Baku. We provide genuine hotel confirmation vouchers on official letterheads recognized by all international consulates without non-refundable prepayment risks.",
     overview: `Proof of accommodation is one of the most critical elements evaluated by European, British, American, and Asian immigration authorities. Consulates strictly prohibit unverified reservations and routinely verify confirmation codes through international hotel reservation databases. At Al Arbab Travels (Pvt) Ltd, we provide authentic, consulate-accepted hotel reservation vouchers that safeguard your visa application and eliminate non-refundable payment exposure.
 
@@ -185,7 +185,7 @@ Traveling with extended Pakistani families requires specialized accommodations s
       "Corporate corporate rates and block bookings for trade delegations and group tours"
     ],
     idealFor: "Visa applicants requiring verifiable stay proof, holiday vacationers, corporate delegations",
-    stats: "Zero Cancellation Risk Vouchers",
+    stats: "Embassy-Compliant Reservations",
     faqs: [
       {
         question: "Are your hotel vouchers accepted by the UK, Schengen, and Canadian embassies?",
@@ -211,12 +211,12 @@ Traveling with extended Pakistani families requires specialized accommodations s
     ]
   },
   {
-    id: "tours",
-    slug: "tours",
-    aliases: ["group-travel", "holiday-tours"],
+    id: "group-corporate-travel",
+    slug: "group-corporate-travel",
+    aliases: ["tours", "group-travel", "holiday-tours"],
     title: "International Holiday Tours & Group Travel",
     icon: "Building2",
-    tagline: "Curated holiday itineraries, corporate retreats, and family vacation packages worldwide",
+    tagline: "All-inclusive holiday itineraries for Dubai, Turkey, Malaysia & Baku with flights, hotels & guided tours",
     summary: "Tailor-made international holiday packages and guided group tours for families, couples, and corporate delegations. Popular destinations include Dubai & Abu Dhabi, Istanbul & Cappadocia, Malaysia & Singapore, Thailand & Phuket, Azerbaijan & Baku, and European grand tours with professional Urdu and English-speaking guides.",
     overview: `Traveling abroad should be an unforgettable, rejuvenating journey free from logistical stress. Al Arbab Travels (Pvt) Ltd designs tailor-made international holiday tours and group vacation packages that blend cultural immersion, iconic sightseeing, comfortable transit, and authentic culinary experiences. From our head office in Islamabad, we craft complete holiday itineraries for travelers seeking extraordinary experiences across the Middle East, Europe, Central Asia, and Southeast Asia.
 
@@ -237,7 +237,7 @@ Corporate organizations rely on our Islamabad corporate desk for trade mission l
       "Dedicated corporate event management, conference passes, and team retreats"
     ],
     idealFor: "Families, honeymoon couples, corporate incentive groups, adventure travelers",
-    stats: "50+ Global Holiday Itineraries",
+    stats: "End-to-End Tour Packages",
     faqs: [
       {
         question: "Do your tour packages include the visit visa processing?",
@@ -259,7 +259,7 @@ Corporate organizations rely on our Islamabad corporate desk for trade mission l
     relatedServices: [
       { title: "Worldwide Visit Visas", slug: "visa-services", desc: "Fast-track tourist e-visas for Dubai, Turkey, Malaysia, and Azerbaijan." },
       { title: "Air Ticketing & Route Concierge", slug: "flights", desc: "Best-fare group air tickets with flexible cancellation and date options." },
-      { title: "Worldwide Hotel Bookings", slug: "hotels", desc: "Curated family resorts and luxury central hotels across top vacation cities." }
+      { title: "Worldwide Hotel Bookings", slug: "hotel-booking", desc: "Curated family resorts and luxury central hotels across top vacation cities." }
     ]
   },
   {
@@ -268,12 +268,12 @@ Corporate organizations rely on our Islamabad corporate desk for trade mission l
     aliases: ["attestation"],
     title: "Document Attestation & Legalization",
     icon: "FileCheck2",
-    tagline: "Fast-track MOFA, IBCC, HEC, Apostille & Foreign Embassy Legalization in Islamabad",
+    tagline: "Fast-track MOFA, HEC degree attestation, IBCC equivalence & Gulf embassy apostille stamping in Islamabad",
     summary: "Fast-track document legalization services based centrally in Islamabad. We handle Ministry of Foreign Affairs (MOFA), HEC, IBCC, NADRA (FRC, MRC, Birth Certificates), and foreign embassy stamps (UAE, Saudi Arabia, Qatar, Kuwait, Spain, Italy) with 100% verified authentic stamps and secure courier delivery across Pakistan.",
     overview: `Document attestation is an essential prerequisite for Pakistani citizens seeking foreign employment, university admissions abroad, residency visas, or family settlement. Because nearly all foreign embassies, the Ministry of Foreign Affairs (MOFA) headquarters, the Higher Education Commission (HEC), and the Inter Board Committee of Chairmen (IBCC) are located in Islamabad's Diplomatic Enclave and Sector H-8/H-9, travelers from across Pakistan often face immense delays navigating bureaucratic queues.
 
 ### Educational Document Verification (IBCC & HEC)
-Al Arbab Travels (Pvt) Ltd operates a dedicated Document Legalization Division headquartered in Blue Area, Islamabad. Our licensed caseworkers interface directly with government departments to obtain genuine, verified attestations. For educational credentials, we manage the complete sequence: matriculation and intermediate certificates through IBCC, bachelor's and master's degrees through HEC online and physical stamping, followed by final MOFA legalization.
+Al Arbab Travels (Pvt) Ltd operates a dedicated Document Legalization Division headquartered in Blue Area, Islamabad. Our experienced document caseworkers interface directly with government departments to obtain genuine, verified attestations. For educational credentials, we manage the complete sequence: matriculation and intermediate certificates through IBCC, bachelor's and master's degrees through HEC online and physical stamping, followed by final MOFA legalization.
 
 ### Civil Status Legalization & Sworn Legal Translations
 For civil and family documents, we legalize NADRA Family Registration Certificates (FRC), Marriage Registration Certificates (Nikahnama and MRC), Birth Registration Certificates (BRC), and Police Character Certificates. For professionals moving to the Gulf (UAE, Saudi Arabia, Qatar, Oman, Kuwait), we coordinate mandatory embassy stamping and Saudi cultural attestation (Sacad). Every document handled by our division is safeguarded through chain-of-custody protocols, registered in official dispatch logs, and returned with secure express courier tracking.`,
@@ -286,7 +286,7 @@ For civil and family documents, we legalize NADRA Family Registration Certificat
       "Secure door-to-door courier intake and return delivery across Pakistan"
     ],
     idealFor: "Immigration applicants, students heading abroad, Gulf job seekers, family reunion applicants",
-    stats: "100% Verified Genuine Stamps",
+    stats: "Islamabad Diplomatic Concierge",
     faqs: [
       {
         question: "How long does MOFA attestation take in Islamabad?",
@@ -308,7 +308,7 @@ For civil and family documents, we legalize NADRA Family Registration Certificat
     relatedServices: [
       { title: "Worldwide Visit Visas", slug: "visa-services", desc: "Attested family and business documents required for European and UK visa files." },
       { title: "Air Ticketing & Route Concierge", slug: "flights", desc: "Book your departure flights once document legalization is finalized." },
-      { title: "Luxury Hotel Bookings", slug: "hotels", desc: "Confirmed accommodation vouchers ready for your embassy visa submission." }
+      { title: "Luxury Hotel Bookings", slug: "hotel-booking", desc: "Confirmed accommodation vouchers ready for your embassy visa submission." }
     ]
   },
   {
@@ -317,7 +317,7 @@ For civil and family documents, we legalize NADRA Family Registration Certificat
     aliases: ["study-permits"],
     title: "Student Visas & Global Study Permits",
     icon: "GraduationCap",
-    tagline: "Pathways to accredited universities in UK, Canada, Australia, Germany & Europe",
+    tagline: "University admissions documentation, CAS/I-20 compiling, financial auditing & German blocked account guidance",
     summary: "End-to-end guidance for Pakistani students seeking undergraduate, postgraduate, and doctoral degrees abroad. We provide university shortlisting, Statement of Purpose (SOP) writing, CAS/I-20 issuance support, bank loan and sponsor financial auditing, and complete visa lodgement.",
     overview: `Pursuing higher education abroad is a life-transforming decision. However, Pakistani students frequently encounter visa denials due to poorly articulated Statements of Purpose (SOP), improper financial documentation, or unconvincing career trajectory justifications. Al Arbab Travels (Pvt) Ltd provides rigorous student visa consultancy that bridges the gap between your academic aspirations and embassy statutory criteria.
 
@@ -333,7 +333,7 @@ Financial vetting is where our caseworkers deliver exceptional value. We audit y
       "Pre-departure briefing and student accommodation assistance"
     ],
     idealFor: "Undergraduate, Masters, and PhD applicants from Pakistan",
-    stats: "1,200+ Successful Study Permits",
+    stats: "Study Permit Application Support",
     faqs: [
       {
         question: "Which countries offer tuition-free education for Pakistani students?",
@@ -351,7 +351,7 @@ Financial vetting is where our caseworkers deliver exceptional value. We audit y
     relatedServices: [
       { title: "Document Attestation & Legalization", slug: "document-attestation", desc: "Mandatory IBCC, HEC, and MOFA degree attestations for foreign university admission." },
       { title: "Air Ticketing & Route Concierge", slug: "flights", desc: "Exclusive student airline fares with 40kg+ baggage allowances for UK and Canada." },
-      { title: "Luxury Hotel Bookings", slug: "hotels", desc: "Temporary accommodation vouchers for initial student arrival before dorm move-in." }
+      { title: "Luxury Hotel Bookings", slug: "hotel-booking", desc: "Temporary accommodation vouchers for initial student arrival before dorm move-in." }
     ]
   },
   {
@@ -360,7 +360,7 @@ Financial vetting is where our caseworkers deliver exceptional value. We audit y
     aliases: ["employment-visas"],
     title: "Skilled Work & Employment Visas",
     icon: "Briefcase",
-    tagline: "Premier overseas employment & work visa processing for Malaysia, Gulf nations, and skilled global routes",
+    tagline: "Malaysian ESD Employment Passes, Bahrain LMRA, Qatar QVC & Saudi electronic Wakala consular document compilation",
     summary: "Dedicated foreign employment visa and work permit facilitation for Pakistani professionals, technicians, and workers. Specializing in Malaysian Employment Passes (EP I/II/III), Bahrain LMRA, Qatar & UAE work visas, Saudi electronic Wakala, Central Asian work permits, and European job-seeker pathways.",
     overview: `Overseas employment is one of the foundational pillars of Al Arbab Travels (Pvt) Ltd. With years of established legal casework in Islamabad, we manage the complete legal chain required for Pakistani workers and executives to work lawfully abroad: foreign sponsor verification, labor ministry approvals, document attestations, GAMCA medicals, protector clearances, and embassy stamping.
 
@@ -385,7 +385,7 @@ We also facilitate work and business permits for Uzbekistan, Azerbaijan, and Taj
       "Germany Chancenkarte (Opportunity Card) points audit & Anabin/ZAB verification"
     ],
     idealFor: "IT specialists, engineers, healthcare professionals, tradesmen, corporate transferees",
-    stats: "Certified Immigration Caseworkers",
+    stats: "Overseas Employment File Advisory",
     faqs: [
       {
         question: "What are the basic requirements for the German Opportunity Card from Pakistan?",
@@ -393,7 +393,7 @@ We also facilitate work and business permits for Uzbekistan, Azerbaijan, and Taj
       },
       {
         question: "Do you provide overseas job placements directly?",
-        answer: "Al Arbab Travels is a licensed visa consultancy and travel agency. We handle the complete legal, governmental, and embassy visa processing once you have an employment offer or qualify for a job-seeker route like the German Chancenkarte."
+        answer: "Al Arbab Travels is a professional travel agency and visa consultancy based in Islamabad. We handle the complete legal, governmental, and embassy visa processing once you have an employment offer or qualify for a job-seeker route like the German Chancenkarte."
       },
       {
         question: "How long does Saudi work visa stamping take in Islamabad?",
@@ -404,6 +404,57 @@ We also facilitate work and business permits for Uzbekistan, Azerbaijan, and Taj
       { title: "Document Attestation & Legalization", slug: "document-attestation", desc: "Mandatory MOFA and embassy stamps for professional degrees and experience letters." },
       { title: "Air Ticketing & Route Concierge", slug: "flights", desc: "Direct one-way corporate and employment airline bookings to Gulf and European hubs." },
       { title: "Worldwide Visit Visas", slug: "visa-services", desc: "Apply for initial visit or business visas to attend in-person foreign job interviews." }
+    ]
+  },
+  {
+    id: "travel-insurance",
+    slug: "travel-insurance",
+    aliases: ["insurance", "travel-medical-insurance"],
+    title: "Travel Medical Insurance & Concierge",
+    icon: "ShieldCheck",
+    tagline: "Mandatory Schengen Article 15 €30,000 zero-deductible travel health insurance policies issued in 15 minutes",
+    summary: "Comprehensive Schengen-compliant (€30,000 coverage, zero deductibles) and worldwide travel health insurance for UK, USA, Canada, Australia, and Gulf travel. Recognized by all embassies in Islamabad with COVID-19 and emergency medical evacuation coverage.",
+    overview: `International travel health insurance is a statutory requirement for travelers seeking Schengen visas, UK visitor visas, and global entry permits. Under Article 15 of the European Schengen Visa Code, applicants must hold verifiable travel medical insurance with minimum coverage of €30,000 covering emergency medical expenses, urgent hospitalization, and repatriation of remains.
+
+At Al Arbab Travels (Pvt) Ltd, our Islamabad concierge desk coordinates with Pakistan's top 'A-Rated' insurance underwriters (including EFU General, Jubilee General, and Adamjee Insurance) to issue official embassy-compliant insurance policies within 15 minutes.
+
+### Mandatory Schengen €30,000 & Zero Deductible Policies
+Every policy issued by our agency meets strict European consular requirements:
+- Minimum medical emergency coverage of €30,000 (or $50,000 USD).
+- Valid across all 29 Schengen member states with zero policy deductibles.
+- Complete coverage for accidental bodily injury, emergency dental care, and medical repatriation.
+- 24/7 worldwide emergency assistance hotline printed clearly on policy certificates.
+
+### Worldwide Coverage: UK, USA, Canada & Middle East
+For travelers visiting North America, the UK, or Gulf nations, unexpected foreign emergency medical bills can escalate into tens of thousands of dollars. We provide high-limit travel insurance options ranging from $50,000 to $500,000 covering flight cancellations, delayed baggage, lost travel documents, and personal liability.`,
+    deliverables: [
+      "Official Schengen-compliant €30,000 travel medical insurance certificate",
+      "Worldwide medical coverage options for USA, Canada, UK, and Australia ($50k - $500k)",
+      "Zero deductible policies accepted by all European consulates in Islamabad",
+      "Full coverage for emergency medical treatment, hospital stays, and repatriation",
+      "Trip cancellation, trip curtailment, and baggage loss protection",
+      "Instant 15-minute digital policy issuance and physical stamped copy"
+    ],
+    idealFor: "Schengen visa applicants, tourists, corporate executives, senior citizens traveling abroad",
+    stats: "Embassy-Compliant Medical Policies",
+    faqs: [
+      {
+        question: "Is travel medical insurance mandatory for a Schengen visa from Pakistan?",
+        answer: "Yes, it is legally mandatory under Article 15 of the Schengen Visa Code. Your policy must provide at least €30,000 in emergency medical coverage, be valid across all Schengen states, and have zero deductibles."
+      },
+      {
+        question: "How quickly can Al Arbab Travels issue a travel insurance policy?",
+        answer: "We issue authentic, underwriter-approved electronic insurance policies within 15 minutes. You receive a digital PDF ready for VFS Global/Gerry's submission immediately."
+      },
+      {
+        question: "What happens to my insurance if my visa application is refused?",
+        answer: "If your visa is refused, our team can process a policy cancellation and refund in accordance with the insurance provider's cancellation terms upon receiving a copy of the refusal letter."
+      }
+    ],
+    relatedServices: [
+      { title: "Worldwide Visit Visas", slug: "visa-services", desc: "Pair your travel health insurance with our Asian visa assistance or Schengen/USA file preparation." },
+      { title: "Air Ticketing & Route Concierge", slug: "flights", desc: "Align policy validity dates perfectly with your flight itinerary." },
+      { title: "Worldwide Hotel Bookings", slug: "hotel-booking", desc: "Embassy-compliant hotel reservations matching your travel dates." }
     ]
   }
 ];

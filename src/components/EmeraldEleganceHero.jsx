@@ -207,28 +207,28 @@ export default function EmeraldEleganceHero({ onOpenEligibility }) {
             }}>
               <div>
                 <div style={{ fontSize: '1.65rem', fontWeight: 700, color: '#ffffff', fontFamily: "'Cormorant Garamond', serif" }}>
-                  99.2%
+                  Islamabad
                 </div>
                 <div style={{ fontSize: '0.76rem', color: 'rgba(215, 235, 225, 0.65)', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
-                  Visa Approval Rate
+                  Blue Area Office
                 </div>
               </div>
               <div style={{ width: '1px', height: '36px', background: 'rgba(255, 255, 255, 0.1)' }} />
               <div>
                 <div style={{ fontSize: '1.65rem', fontWeight: 700, color: '#ffffff', fontFamily: "'Cormorant Garamond', serif" }}>
-                  15,000+
+                  Direct
                 </div>
                 <div style={{ fontSize: '0.76rem', color: 'rgba(215, 235, 225, 0.65)', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
-                  Passports Issued
+                  WhatsApp &amp; Desk Support
                 </div>
               </div>
               <div style={{ width: '1px', height: '36px', background: 'rgba(255, 255, 255, 0.1)' }} />
               <div>
                 <div style={{ fontSize: '1.65rem', fontWeight: 700, color: '#ffffff', fontFamily: "'Cormorant Garamond', serif" }}>
-                  24-48h
+                  Personal
                 </div>
                 <div style={{ fontSize: '0.76rem', color: 'rgba(215, 235, 225, 0.65)', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
-                  Fast-Track Processing
+                  Travel Consultancy
                 </div>
               </div>
             </div>

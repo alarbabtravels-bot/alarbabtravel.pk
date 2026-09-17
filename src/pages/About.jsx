@@ -1,6 +1,5 @@
-import { ShieldCheck, Award, Users, MapPin, Building, Globe2, ArrowRight } from 'lucide-react';
+import { ShieldCheck, Award, Building, Users, ArrowRight, Globe2 } from 'lucide-react';
 import SEO from '../components/SEO';
-import AnimatedCounter from '../components/AnimatedCounter';
 
 export default function About({ onOpenEligibility }) {
   const breadcrumbSchema = {
@@ -16,7 +15,7 @@ export default function About({ onOpenEligibility }) {
       {
         "@type": "ListItem",
         "position": 2,
-        "name": "About Us",
+        "name": "About",
         "item": "https://alarbabtravel.pk/about"
       }
     ]
@@ -26,8 +25,8 @@ export default function About({ onOpenEligibility }) {
     <>
       <SEO 
         title="About Al Arbab Travels | Premier Visa Consultancy Islamabad Pakistan"
-        description="Learn about Al Arbab Travels, an SECP-registered travel agency and visa consultancy in Blue Area, Islamabad. Dedicated to high-approval visa solutions."
-        keywords="about Al Arbab Travels, Islamabad travel agency, visa consultant Pakistan, travel agency Islamabad, SECP registered visa consultancy"
+        description="Learn about Al Arbab Travels, a dedicated travel agency and visa consultancy based in Blue Area, Islamabad. Full assistance for Asian visit visas, Umrah packages, flight booking, and expert Schengen & USA file preparation."
+        keywords="about Al Arbab Travels, Islamabad travel agency, visa consultant Pakistan, travel agency Islamabad, Blue Area travel agency"
         canonicalPath="/about"
         schema={breadcrumbSchema}
       />
@@ -43,7 +42,7 @@ export default function About({ onOpenEligibility }) {
           <div className="container">
             <div style={{ maxWidth: '760px' }}>
               <div className="badge-gold" style={{ marginBottom: '0.85rem' }}>
-                <Building size={14} /> Our Heritage & Ethics
+                <Building size={14} /> Al Arbab Travels (Pvt) Ltd · Blue Area, Islamabad
               </div>
               <h1 style={{ fontSize: 'clamp(2.2rem, 4.2vw, 3.2rem)', fontWeight: 700, lineHeight: 1.2, marginBottom: '1rem', color: 'var(--text-heading)' }}>
                 Redefining the Paradigm of <span style={{ color: 'var(--emerald-accent)' }}>Visa Advisory in Pakistan</span>
@@ -61,7 +60,7 @@ export default function About({ onOpenEligibility }) {
             <div className="offset-grid">
               <div>
                 <div className="badge-gold" style={{ marginBottom: '0.6rem' }}>
-                  <ShieldCheck size={14} /> Registered &amp; Verified
+                  <ShieldCheck size={14} /> Honest Consultancy · Blue Area, Islamabad
                 </div>
                 <h2 style={{ fontSize: 'clamp(1.75rem, 3vw, 2.3rem)', fontWeight: 700, marginBottom: '1.25rem', color: 'var(--text-heading)' }}>
                   A Legally Grounded, <span style={{ color: 'var(--emerald-accent)' }}>Client-Centric Philosophy</span>
@@ -70,7 +69,7 @@ export default function About({ onOpenEligibility }) {
                   Every year, thousands of Pakistani applicants face traumatic visa refusals—not because they lacked genuine intentions, but because their cases were hastily filed with generic templates, unverified hotel bookings, or unexplained bank transactions.
                 </p>
                 <p style={{ color: 'var(--text-body)', fontSize: '0.98rem', lineHeight: 1.7, marginBottom: '1.75rem' }}>
-                  At Al Arbab Travels, we operate like legal caseworkers. We assess each client’s socio-economic ties to Pakistan, perform line-by-line financial statement audits, and prepare bespoke cover letters that preemptively answer the exact concerns of embassy clearance officers.
+                  At Al Arbab Travels, we operate like legal caseworkers. We provide full visa processing for Asian destinations (Malaysia, UAE, Thailand) and Umrah packages, alongside full air ticketing services. For European Schengen and USA applications, our scope is strictly expert file preparation—document checklists, financial audits, DS-160 drafting, and mock interview coaching.
                 </p>
 
                 <div style={{
@@ -84,18 +83,18 @@ export default function About({ onOpenEligibility }) {
                   boxShadow: '0 8px 24px rgba(0, 0, 0, 0.4)'
                 }}>
                   <div>
-                    <div style={{ fontSize: '1.75rem', fontWeight: 700, color: '#38bdf8', fontFamily: 'var(--font-heading)' }}>
-                      <AnimatedCounter endValue={98.4} decimals={1} suffix="%" />
+                    <div style={{ fontSize: '1.4rem', fontWeight: 700, color: '#38bdf8', fontFamily: 'var(--font-heading)' }}>
+                      Blue Area
                     </div>
-                    <div style={{ fontSize: '0.88rem', fontWeight: 700, color: 'var(--text-heading)', fontFamily: 'var(--font-heading)' }}>Approval Benchmark</div>
-                    <div style={{ fontSize: '0.78rem', color: 'var(--text-body)' }}>Rigorous pre-submission vetting.</div>
+                    <div style={{ fontSize: '0.88rem', fontWeight: 700, color: 'var(--text-heading)', fontFamily: 'var(--font-heading)' }}>Islamabad Office</div>
+                    <div style={{ fontSize: '0.78rem', color: 'var(--text-body)' }}>Eagle Plaza, Fazal-e-Haq Road.</div>
                   </div>
                   <div>
-                    <div style={{ fontSize: '1.75rem', fontWeight: 700, color: '#eed88a', fontFamily: 'var(--font-heading)' }}>
-                      <AnimatedCounter endValue={14500} suffix="+" />
+                    <div style={{ fontSize: '1.4rem', fontWeight: 700, color: '#eed88a', fontFamily: 'var(--font-heading)' }}>
+                      Dedicated
                     </div>
-                    <div style={{ fontSize: '0.88rem', fontWeight: 700, color: 'var(--text-heading)', fontFamily: 'var(--font-heading)' }}>Happy Travelers</div>
-                    <div style={{ fontSize: '0.78rem', color: 'var(--text-body)' }}>Over 50 countries traveled.</div>
+                    <div style={{ fontSize: '0.88rem', fontWeight: 700, color: 'var(--text-heading)', fontFamily: 'var(--font-heading)' }}>Personalized Advice</div>
+                    <div style={{ fontSize: '0.78rem', color: 'var(--text-body)' }}>Direct WhatsApp &amp; in-person guidance.</div>
                   </div>
                 </div>
               </div>
@@ -118,12 +117,12 @@ export default function About({ onOpenEligibility }) {
                       <ShieldCheck size={20} color="#38bdf8" />
                     </div>
                     <div>
-                      <h3 style={{ fontSize: '1.1rem', fontWeight: 700, color: 'var(--text-heading)' }}>Corporate Credentials</h3>
-                      <div style={{ fontSize: '0.8rem', color: '#38bdf8', fontWeight: 600 }}>Registered Travel Consultancy</div>
+                      <h3 style={{ fontSize: '1.1rem', fontWeight: 700, color: 'var(--text-heading)' }}>Personalized Consultancy</h3>
+                      <div style={{ fontSize: '0.8rem', color: '#38bdf8', fontWeight: 600 }}>Hands-On Client Care</div>
                     </div>
                   </div>
                   <p style={{ fontSize: '0.88rem', color: 'var(--text-body)', lineHeight: 1.6 }}>
-                    Formally recognized and registered to operate travel, tourism, and visa advisory services under federal guidelines.
+                    Direct one-on-one casework for Asian visit visas, Umrah travel arrangements, flight ticketing, and embassy file preparation.
                   </p>
                 </div>
 
@@ -143,12 +142,12 @@ export default function About({ onOpenEligibility }) {
                       <Building size={20} color="#38bdf8" />
                     </div>
                     <div>
-                      <h3 style={{ fontSize: '1.1rem', fontWeight: 700, color: 'var(--text-heading)' }}>SECP Corporate Registration</h3>
-                      <div style={{ fontSize: '0.8rem', color: '#38bdf8', fontWeight: 600 }}>Securities & Exchange Commission of Pakistan</div>
+                      <h3 style={{ fontSize: '1.1rem', fontWeight: 700, color: 'var(--text-heading)' }}>Central Islamabad Office</h3>
+                      <div style={{ fontSize: '0.8rem', color: '#38bdf8', fontWeight: 600 }}>Eagle Plaza, Blue Area</div>
                     </div>
                   </div>
                   <p style={{ fontSize: '0.88rem', color: 'var(--text-body)', lineHeight: 1.6 }}>
-                    Incorporated with full tax compliance (FBR Active Taxpayer), ensuring financial security and strict ethical governance.
+                    Conveniently located on Fazal-e-Haq Road in Blue Area, welcoming travelers for in-person consultation and profile reviews.
                   </p>
                 </div>
 
@@ -168,8 +167,8 @@ export default function About({ onOpenEligibility }) {
                       <Globe2 size={20} color="#38bdf8" />
                     </div>
                     <div>
-                      <h3 style={{ fontSize: '1.1rem', fontWeight: 700, color: 'var(--text-heading)' }}>Global Airline & Embassy Network</h3>
-                      <div style={{ fontSize: '0.8rem', color: '#38bdf8', fontWeight: 600 }}>IATA Certified Global Distribution</div>
+                      <h3 style={{ fontSize: '1.1rem', fontWeight: 700, color: 'var(--text-heading)' }}>Airline &amp; Embassy Network</h3>
+                      <div style={{ fontSize: '0.8rem', color: '#38bdf8', fontWeight: 600 }}>Global Airline Booking Systems</div>
                     </div>
                   </div>
                   <p style={{ fontSize: '0.88rem', color: 'var(--text-body)', lineHeight: 1.6 }}>
@@ -203,8 +202,8 @@ export default function About({ onOpenEligibility }) {
             }}>
               {[
                 {
-                  title: "Zero False Promises",
-                  desc: "We never guarantee a visa because embassies make the final call. Instead, we guarantee that your file will be presented in the strongest legal light possible."
+                  title: "Zero False Guarantees",
+                  desc: "We never guarantee visa outcomes because embassies make the final decision. While we provide full processing for Asian visit visas and Umrah, European Schengen and USA services are strictly File Preparation Only."
                 },
                 {
                   title: "Forensic Document Audit",

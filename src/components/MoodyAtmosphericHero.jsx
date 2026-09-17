@@ -123,7 +123,7 @@ export default function MoodyAtmosphericHero({ onOpenEligibility }) {
           </div>
 
           <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-            <span style={{ color: 'var(--text-body)' }}>SECP REGISTERED</span>
+            <span style={{ color: 'var(--text-body)' }}>BLUE AREA, ISLAMABAD</span>
           </div>
         </div>
       </div>
@@ -238,7 +238,7 @@ export default function MoodyAtmosphericHero({ onOpenEligibility }) {
                   190+ Destinations
                 </div>
                 <p style={{ fontSize: '0.88rem', color: 'var(--text-body)', lineHeight: 1.6 }}>
-                  Seamless casework across UK, Schengen 29 states, North America, and Gulf.
+                  Asian visit visa processing &amp; file preparation for Schengen, UK &amp; North America.
                 </p>
               </div>
 
@@ -252,13 +252,13 @@ export default function MoodyAtmosphericHero({ onOpenEligibility }) {
                   marginBottom: '4px',
                   fontFamily: 'var(--font-heading)'
                 }}>
-                  [B] REGULATORY BENCHMARK
+                  [B] DEDICATED CONSULTANCY
                 </div>
                 <div style={{ fontSize: '1.35rem', fontWeight: 700, color: 'var(--gold-accent)', marginBottom: '4px', fontFamily: 'var(--font-heading)' }}>
-                  98.4% Precision
+                  Direct Desk &amp; WhatsApp Support
                 </div>
                 <p style={{ fontSize: '0.88rem', color: 'var(--text-body)', lineHeight: 1.6 }}>
-                  Forensic bank statement auditing, verified PNR tickets, and registered caseworkers.
+                  Forensic bank statement auditing, verified PNR tickets, and dedicated caseworkers.
                 </p>
               </div>
             </div>

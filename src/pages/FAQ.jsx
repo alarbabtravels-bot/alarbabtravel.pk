@@ -8,7 +8,7 @@ export default function FAQ({ onOpenEligibility }) {
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [openIndexes, setOpenIndexes] = useState([0]);
 
-  const categories = ['All', 'Financials & Bank Statements', 'Refusals & Appeals', 'Appointments & Biometrics', 'Processing Times', 'Documentation & Ties', 'General & Licensing'];
+  const categories = ['All', 'Financials & Bank Statements', 'Refusals & Appeals', 'Appointments & Biometrics', 'Processing Times', 'Documentation & Ties', 'Scope & Services', 'Office & Location'];
 
   const toggleFaq = (idx) => {
     if (openIndexes.includes(idx)) {
@@ -78,13 +78,13 @@ export default function FAQ({ onOpenEligibility }) {
           <div className="container">
             <div style={{ maxWidth: '760px' }}>
               <div className="badge-gold" style={{ marginBottom: '0.85rem' }}>
-                <HelpCircle size={14} /> Knowledge Base
+                <HelpCircle size={14} /> Al Arbab Travels · Blue Area, Islamabad Knowledge Base
               </div>
               <h1 style={{ fontSize: 'clamp(2.2rem, 4.2vw, 3.2rem)', fontWeight: 700, lineHeight: 1.2, marginBottom: '1rem', color: '#ffffff' }}>
                 Frequently Asked <span style={{ color: 'var(--gold-accent)' }}>Questions & Guidance</span>
               </h1>
               <p style={{ color: 'var(--text-body)', fontSize: '1.05rem', lineHeight: 1.7 }}>
-                Transparent, legally sound answers regarding bank statement requirements, embassy refusal appeals, appointment booking, and genuine documents.
+                Transparent, fact-based answers on Asian visit visa processing, Umrah packages, flight ticketing, and our professional file preparation scope for Schengen and USA visas.
               </p>
             </div>
           </div>

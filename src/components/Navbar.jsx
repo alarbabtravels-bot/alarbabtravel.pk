@@ -64,11 +64,15 @@ export default function Navbar({ onOpenEligibility }) {
       path: '/services',
       hasDropdown: true,
       items: [
-        { title: 'Air Ticketing & Top Airlines', desc: 'Domestic & international flight booking with best fares', path: '/services' },
-        { title: 'Umrah & Hajj Luxury Packages', desc: 'Customized spiritual packages with premium hotels', path: '/services' },
-        { title: 'Visit & Tourist Visas', desc: 'Specialized filing for UK, Schengen, USA, Canada & Gulf', path: '/services' },
-        { title: 'Worldwide Hotel Bookings', desc: 'Verified accommodation vouchers for all embassies', path: '/services' },
-        { title: 'Travel Insurance & Concierge', desc: 'Embassy-compliant medical insurance & document care', path: '/services' }
+        { title: 'Umrah & Hajj Luxury Packages', desc: 'Spiritual pilgrimages with 5-star clock tower stays', path: '/services/umrah-hajj' },
+        { title: 'Visit Visas & Embassy File Prep', desc: 'Asian visit visa processing & Schengen/USA file preparation', path: '/services/visa-services' },
+        { title: 'Air Ticketing & Route Concierge', desc: 'Domestic & international flight booking with best fares', path: '/services/flights' },
+        { title: 'Worldwide Hotel Bookings', desc: 'Verified accommodation vouchers for all embassies', path: '/services/hotel-booking' },
+        { title: 'International Holiday Tours', desc: 'Curated vacations, family getaways & corporate retreats', path: '/services/group-corporate-travel' },
+        { title: 'Travel Medical Insurance', desc: 'Embassy-compliant €30,000 to $100,000 policies', path: '/services/travel-insurance' },
+        { title: 'Document Attestation & Legalization', desc: 'Fast-track MOFA, IBCC, HEC & Embassy stamps in Islamabad', path: '/services/document-attestation' },
+        { title: 'Student Visas & Global Study Permits', desc: 'Admissions and visas for UK, Canada, Australia & Europe', path: '/services/student-visas' },
+        { title: 'Skilled Work & Employment Visas', desc: 'Malaysia, Gulf & Central Asia employment visas', path: '/services/work-visas' }
       ]
     },
     { 
@@ -76,11 +80,14 @@ export default function Navbar({ onOpenEligibility }) {
       path: '/destinations',
       hasDropdown: true,
       items: [
-        { title: 'Makkah & Madinah (Umrah)', tag: 'Spiritual', path: '/destinations' },
-        { title: 'Dubai & UAE', tag: 'Fast-Track', path: '/destinations' },
-        { title: 'Turkey & Istanbul', tag: 'Heritage', path: '/destinations' },
-        { title: 'Malaysia & Southeast Asia', tag: 'Top Family', path: '/destinations' },
-        { title: 'UK, Schengen & Europe', tag: 'Global', path: '/destinations' }
+        { title: 'Malaysia', tag: 'Top Pick', path: '/destinations/malaysia' },
+        { title: 'Thailand', tag: 'Top Holiday', path: '/destinations/thailand' },
+        { title: 'Singapore', tag: 'Business Hub', path: '/destinations/singapore' },
+        { title: 'Saudi Arabia (Umrah & Work)', tag: 'Spiritual', path: '/destinations/saudi-arabia' },
+        { title: 'Dubai & UAE', tag: 'Fast-Track', path: '/destinations/uae' },
+        { title: 'Turkey & Istanbul', tag: 'Heritage', path: '/destinations/turkey' },
+        { title: 'United States (USA)', tag: 'File Prep', path: '/destinations/usa' },
+        { title: 'Schengen Area (Europe)', tag: 'File Prep', path: '/destinations/schengen' }
       ]
     },
     { name: 'About Us', path: '/about' },

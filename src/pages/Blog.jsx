@@ -88,7 +88,7 @@ export default function Blog({ onOpenEligibility }) {
       <SEO 
         title={pageTitle}
         description={pageDescription}
-        keywords="Pakistan visa guide 2026, Schengen visa Pakistan tips, UK visa refusal reasons Pakistan, Germany opportunity card Pakistan"
+        keywords="Pakistan visa guide 2026, Schengen visa file preparation Pakistan, UK visa refusal reasons Pakistan, Germany opportunity card Pakistan"
         canonicalPath={selectedArticle ? `/blog/${selectedArticle.slug || selectedArticle.id}` : "/blog"}
         image={selectedArticle?.image || "https://alarbabtravel.pk/hero_travel_lux.jpg"}
         type={selectedArticle ? "article" : "website"}
