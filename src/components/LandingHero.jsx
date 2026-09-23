@@ -9,7 +9,7 @@ export default function LandingHero({ onOpenEligibility }) {
 
   const handleSearchSubmit = (e) => {
     e.preventDefault();
-    const query = searchTerm.trim().toLowerCase();
+    const query = searchTerm.replace(/[<>]/g, '').trim().toLowerCase();
     if (query) {
       const match = destinations.find(d => 
         (d.slug && d.slug.toLowerCase() === query) ||
@@ -98,22 +98,7 @@ export default function LandingHero({ onOpenEligibility }) {
               ========================================================================= */}
           <div style={{ maxWidth: '680px' }} className="hero-content-col">
             {/* Trust & Location Authority Pill */}
-            <div style={{
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: '8px',
-              padding: '6px 16px',
-              borderRadius: '9999px',
-              background: 'rgba(238, 216, 138, 0.09)',
-              border: '1px solid rgba(238, 216, 138, 0.28)',
-              marginBottom: '1.4rem',
-              color: '#eed88a',
-              fontSize: '0.78rem',
-              fontWeight: 700,
-              letterSpacing: '0.12em',
-              textTransform: 'uppercase',
-              fontFamily: "'Inter', sans-serif"
-            }}>
+            <div className="hero-glass-pill">
               <span style={{ 
                 width: '7px', 
                 height: '7px', 
@@ -172,23 +157,7 @@ export default function LandingHero({ onOpenEligibility }) {
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 placeholder="Search visas, flights, Umrah packages..."
-                style={{
-                  width: '100%',
-                  height: '54px',
-                  borderRadius: '9999px',
-                  background: 'rgba(10, 14, 22, 0.75)',
-                  backdropFilter: 'blur(16px)',
-                  WebkitBackdropFilter: 'blur(16px)',
-                  border: '1.5px solid rgba(255, 255, 255, 0.22)',
-                  padding: '0 56px 0 22px',
-                  color: '#ffffff',
-                  fontSize: '0.94rem',
-                  outline: 'none',
-                  boxShadow: '0 8px 24px rgba(0, 0, 0, 0.5), inset 0 1px 1px rgba(255, 255, 255, 0.08)',
-                  transition: 'all 0.25s ease',
-                  fontFamily: "'Inter', sans-serif"
-                }}
-                className="hero-capsule-input"
+                className="hero-glass-search-input"
               />
 
               {/* Magnifying Glass Submit Button with Warm Hover Accent */}
@@ -383,18 +352,7 @@ export default function LandingHero({ onOpenEligibility }) {
           }} className="hero-dest-spotlight-col">
             
             {/* Translucent Glass Travel Spotlight Box */}
-            <div style={{
-              width: '100%',
-              maxWidth: '430px',
-              borderRadius: '20px',
-              background: 'rgba(9, 13, 22, 0.65)',
-              backdropFilter: 'blur(16px)',
-              WebkitBackdropFilter: 'blur(16px)',
-              border: '1px solid rgba(255, 255, 255, 0.14)',
-              boxShadow: '0 20px 50px rgba(0, 0, 0, 0.65), 0 0 30px rgba(229, 169, 60, 0.1)',
-              padding: '1.6rem',
-              overflow: 'hidden'
-            }}>
+            <div className="hero-featured-focus-card">
               {/* Header inside card */}
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1.25rem' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
@@ -454,7 +412,7 @@ export default function LandingHero({ onOpenEligibility }) {
                 >
                   <img 
                     src="/dest_makkah_thumb.webp" 
-                    alt="Makkah Umrah"
+                    alt="Umrah packages Islamabad - Makkah Al-Mukarramah & Madinah"
                     width="46"
                     height="46"
                     loading="lazy"
@@ -490,7 +448,7 @@ export default function LandingHero({ onOpenEligibility }) {
                 >
                   <img 
                     src="/dest_dubai_thumb.webp" 
-                    alt="Dubai Visas"
+                    alt="Dubai visit visa agency Islamabad - UAE tourist visa"
                     width="46"
                     height="46"
                     loading="lazy"
@@ -526,7 +484,7 @@ export default function LandingHero({ onOpenEligibility }) {
                 >
                   <img 
                     src="/dest_turkey_thumb.webp" 
-                    alt="International Travel"
+                    alt="Turkey visit visa consultant Islamabad - Istanbul and global visa file prep"
                     width="46"
                     height="46"
                     loading="lazy"

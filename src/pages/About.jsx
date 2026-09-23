@@ -24,9 +24,9 @@ export default function About({ onOpenEligibility }) {
   return (
     <>
       <SEO 
-        title="About Al Arbab Travels | Premier Visa Consultancy Islamabad Pakistan"
-        description="Learn about Al Arbab Travels, a dedicated travel agency and visa consultancy based in Blue Area, Islamabad. Full assistance for Asian visit visas, Umrah packages, flight booking, and expert Schengen & USA file preparation."
-        keywords="about Al Arbab Travels, Islamabad travel agency, visa consultant Pakistan, travel agency Islamabad, Blue Area travel agency"
+        title="About Al Arbab Travels | Best Visa Consultancy in Islamabad"
+        description="About Al Arbab Travels — the best visa consultancy in Blue Area, Islamabad. Trusted by travelers across Islamabad, Rawalpindi & Pakistan for visit visas and Umrah packages."
+        keywords="best travel agency in Islamabad, best visa consultant in Islamabad, best travel agency in Blue Area Islamabad, visa consultancy in Islamabad, best travel agency near me, travel agency Rawalpindi, travel agency Islamabad"
         canonicalPath="/about"
         schema={breadcrumbSchema}
       />
@@ -45,10 +45,10 @@ export default function About({ onOpenEligibility }) {
                 <Building size={14} /> Al Arbab Travels (Pvt) Ltd · Blue Area, Islamabad
               </div>
               <h1 style={{ fontSize: 'clamp(2.2rem, 4.2vw, 3.2rem)', fontWeight: 700, lineHeight: 1.2, marginBottom: '1rem', color: 'var(--text-heading)' }}>
-                Redefining the Paradigm of <span style={{ color: 'var(--emerald-accent)' }}>Visa Advisory in Pakistan</span>
+                Best Visa Consultancy &amp; <span style={{ color: 'var(--emerald-accent)' }}>Travel Agency in Islamabad</span>
               </h1>
               <p style={{ color: 'var(--text-body)', fontSize: '1.05rem', lineHeight: 1.7 }}>
-                Founded in the heart of Islamabad, Al Arbab Travels was established to counter the widespread misinformation and sub-standard document handling prevalent across Pakistan’s travel consultancy market.
+                Founded in Blue Area, Islamabad, Al Arbab Travels (Pvt) Ltd provides honest, reliable visa consultancy, certified Umrah packages, and worldwide travel services for clients across Islamabad, Rawalpindi, and Pakistan.
               </p>
             </div>
           </div>
@@ -76,21 +76,21 @@ export default function About({ onOpenEligibility }) {
                   className="form-row-2col"
                   style={{
                     padding: '1.25rem',
-                    background: 'rgba(13, 17, 26, 0.75)',
+                    background: '#f7fafc',
                     borderRadius: 'var(--radius-card)',
-                    border: '1px solid rgba(255, 255, 255, 0.12)',
-                    boxShadow: '0 8px 24px rgba(0, 0, 0, 0.4)'
+                    border: '1px solid #e7edf3',
+                    boxShadow: '0 8px 24px rgba(15, 32, 55, 0.06)'
                   }}
                 >
                   <div>
-                    <div style={{ fontSize: '1.4rem', fontWeight: 700, color: '#38bdf8', fontFamily: 'var(--font-heading)' }}>
+                    <div style={{ fontSize: '1.4rem', fontWeight: 700, color: '#0b6fce', fontFamily: 'var(--font-heading)' }}>
                       Blue Area
                     </div>
                     <div style={{ fontSize: '0.88rem', fontWeight: 700, color: 'var(--text-heading)', fontFamily: 'var(--font-heading)' }}>Islamabad Office</div>
                     <div style={{ fontSize: '0.78rem', color: 'var(--text-body)' }}>Eagle Plaza, Fazal-e-Haq Road.</div>
                   </div>
                   <div>
-                    <div style={{ fontSize: '1.4rem', fontWeight: 700, color: '#eed88a', fontFamily: 'var(--font-heading)' }}>
+                    <div style={{ fontSize: '1.4rem', fontWeight: 700, color: '#a3720b', fontFamily: 'var(--font-heading)' }}>
                       Dedicated
                     </div>
                     <div style={{ fontSize: '0.88rem', fontWeight: 700, color: 'var(--text-heading)', fontFamily: 'var(--font-heading)' }}>Personalized Advice</div>

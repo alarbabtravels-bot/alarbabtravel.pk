@@ -60,9 +60,9 @@ export default function FAQ({ onOpenEligibility }) {
   return (
     <>
       <SEO 
-        title="Frequently Asked Questions (FAQ) | Al Arbab Travels Islamabad"
-        description="Authentic guidance on Pakistan passport visa bank statements, funds parking rules, refusal appeals, Gerry's appointments, and processing times."
-        keywords="Pakistan visa FAQ, bank statement requirement UK visa Pakistan, Schengen visa rejection appeal Pakistan, Gerry's appointment booking Islamabad"
+        title="Visa & Umrah FAQs Islamabad | Al Arbab Travels Blue Area"
+        description="Get authentic answers to visa and travel questions in Islamabad: bank statement requirements, refusal appeals, Umrah packages, Gerry's appointments & processing times."
+        keywords="visa consultancy in Islamabad, best visa consultant in Islamabad, Umrah packages Islamabad FAQ, bank statement requirement UK visa Pakistan, Schengen visa appointment Pakistan, best travel agency in Blue Area Islamabad"
         canonicalPath="/faq"
         schema={[faqSchema, breadcrumbSchema]}
       />
@@ -80,8 +80,8 @@ export default function FAQ({ onOpenEligibility }) {
               <div className="badge-gold" style={{ marginBottom: '0.85rem' }}>
                 <HelpCircle size={14} /> Al Arbab Travels · Blue Area, Islamabad Knowledge Base
               </div>
-              <h1 style={{ fontSize: 'clamp(2.2rem, 4.2vw, 3.2rem)', fontWeight: 700, lineHeight: 1.2, marginBottom: '1rem', color: '#ffffff' }}>
-                Frequently Asked <span style={{ color: 'var(--gold-accent)' }}>Questions & Guidance</span>
+              <h1 style={{ fontSize: 'clamp(2.2rem, 4.2vw, 3.2rem)', fontWeight: 700, lineHeight: 1.2, marginBottom: '1rem', color: 'var(--text-heading)' }}>
+                Visa &amp; Umrah Guidance — <span style={{ color: 'var(--gold-accent)' }}>Frequently Asked Questions</span>
               </h1>
               <p style={{ color: 'var(--text-body)', fontSize: '1.05rem', lineHeight: 1.7 }}>
                 Transparent, fact-based answers on Asian visit visa processing, Umrah packages, flight ticketing, and our professional file preparation scope for Schengen and USA visas.
@@ -151,7 +151,7 @@ export default function FAQ({ onOpenEligibility }) {
             {filteredFaqs.length === 0 ? (
               <div className="glass-card" style={{ padding: '3rem', textAlign: 'center' }}>
                 <HelpCircle size={40} color="var(--gold-accent)" style={{ margin: '0 auto 0.75rem' }} />
-                <h3 style={{ fontSize: '1.2rem', fontWeight: 600, marginBottom: '0.35rem', color: '#ffffff' }}>No Matching Questions Found</h3>
+                <h3 style={{ fontSize: '1.2rem', fontWeight: 600, marginBottom: '0.35rem', color: 'var(--text-heading)' }}>No Matching Questions Found</h3>
                 <p style={{ color: 'var(--text-body)', fontSize: '0.88rem', marginBottom: '1.25rem' }}>
                   Have a specific question about your individual travel history or financial documents? Ask our counselors directly.
                 </p>
@@ -248,7 +248,7 @@ export default function FAQ({ onOpenEligibility }) {
                 border: '1px solid var(--gold-border)'
               }}
             >
-              <h3 style={{ fontSize: '1.4rem', fontWeight: 700, marginBottom: '0.5rem', color: '#ffffff' }}>
+              <h3 style={{ fontSize: '1.4rem', fontWeight: 700, marginBottom: '0.5rem', color: 'var(--text-heading)' }}>
                 Still Have Questions Regarding Your Profile?
               </h3>
               <p style={{ color: 'var(--text-body)', fontSize: '0.95rem', maxWidth: '560px', margin: '0 auto 1.5rem', lineHeight: 1.6 }}>

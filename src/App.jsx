@@ -27,8 +27,8 @@ function PageLoader() {
       <div style={{
         width: '44px',
         height: '44px',
-        border: '3px solid rgba(212, 175, 55, 0.2)',
-        borderTopColor: 'var(--gold-400)',
+        border: '3px solid rgba(201, 147, 46, 0.2)',
+        borderTopColor: 'var(--gold-primary, #c9932e)',
         borderRadius: '50%',
         animation: 'spin 0.8s linear infinite'
       }} />
@@ -102,7 +102,7 @@ export default function App() {
         <Suspense fallback={<PageLoader />}>
           <div style={{ flex: 1, minHeight: '80vh' }}>
             <Routes>
-              <Route path="/" element={<Home onOpenEligibility={handleOpenEligibility} />} />
+              <Route path="/" element={<Home onOpenEligibility={handleOpenEligibility} onOpenEligibilityWithCountry={handleOpenEligibilityWithCountry} />} />
               <Route path="/about" element={<About onOpenEligibility={handleOpenEligibility} />} />
               <Route path="/services" element={<Services onOpenEligibility={handleOpenEligibility} />} />
               <Route path="/services/:serviceSlug" element={<Services onOpenEligibility={handleOpenEligibility} />} />

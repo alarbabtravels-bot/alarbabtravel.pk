@@ -552,7 +552,7 @@ export const destinations = [
     country: "United States",
     continent: "Americas",
     flag: "🇺🇸",
-    image: "https://images.unsplash.com/photo-1508873696983-2df5293cb32b?auto=format&fit=crop&w=1000&q=80",
+    image: "/dest_usa.webp",
     popularVisa: "B1/B2 Tourism & Business (5-Year Multiple) · Application Support Only",
     types: ["B1/B2 Visitor (File Prep & DS-160)", "F-1 Student Visa (I-20 File Prep)", "J-1 Exchange (File Prep)", "C1/D Transit"],
     processingTime: "Interview Dependent (US Embassy Islamabad / Karachi)",

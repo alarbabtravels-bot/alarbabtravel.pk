@@ -3,29 +3,49 @@ logs
 *.log
 npm-debug.log*
 yarn-debug.log*
-yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependencies & Build Output
 node_modules
 dist
 dist-ssr
 *.local
 vite.config.js.timestamp-*
 
-# Editor directories and files
+# Editor & System Files
 .vscode/*
 !.vscode/extensions.json
 .idea
 .DS_Store
+Thumbs.db
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
 
-# Environment variables
+# Environment Variables & Secrets (CRITICAL FOR REPO SECURITY)
 .env
-.env.production
-.env.development
-.env.local
+.env.*
+!.env.example
+*.pem
+*.key
+*.cert
+*.crt
+credentials*.json
+serviceAccount*.json
+*firebase-adminsdk*.json
+secret*.json
+
+# Backups & Temp files
+*.bak
+*.backup
+*.tmp
+*.temp
+
+# Local scratch and test run media
+scripts/*.png
+scripts/*.jpg
+scripts/*.bin
+Claude outputs/

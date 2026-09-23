@@ -1,0 +1,65 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+
+    // =========================================================================
+    // HELPER FUNCTIONS
+    // =========================================================================
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+
+    function isStaff() {
+      return isAuthenticated() && (
+        request.auth.token.role == 'admin' ||
+        request.auth.token.role == 'staff' ||
+        request.auth.token.role == 'agent'
+      );
+    }
+
+    function isValidDocument() {
+      // Must be PDF or image, max 10MB
+      return request.resource.size < 10 * 1024 * 1024
+          && (request.resource.contentType.matches('image/.*')
+              || request.resource.contentType == 'application/pdf');
+    }
+
+    // =========================================================================
+    // DEFAULT RULE: ZERO-TRUST DENY ALL
+    // =========================================================================
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+
+    // =========================================================================
+    // 1. SENSITIVE PASSPORT & VISA DOCUMENTS
+    // /documents/{userId}/{fileName}
+    // ZERO PUBLIC ACCESS — strictly restricted to document owner & staff
+    // =========================================================================
+    match /documents/{userId}/{fileName} {
+      // Only the authenticated applicant or verified travel staff can read/download
+      allow read: if isOwner(userId) || isStaff();
+
+      // Applicant can upload their own document (with size & type restrictions)
+      allow create: if isOwner(userId) && isValidDocument();
+
+      // Only applicant before review or staff can overwrite
+      allow update: if (isOwner(userId) || isStaff()) && isValidDocument();
+
+      // Deletion restricted to applicant or admin
+      allow delete: if isOwner(userId) || (isAuthenticated() && request.auth.token.role == 'admin');
+    }
+
+    // =========================================================================
+    // 2. PUBLIC MEDIA (Marketing banners, package flyers, logos)
+    // =========================================================================
+    match /public_assets/{fileName} {
+      allow read: if true;
+      allow write: if isStaff() && request.resource.size < 15 * 1024 * 1024;
+    }
+  }
+}

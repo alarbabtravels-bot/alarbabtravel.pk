@@ -73,10 +73,10 @@ Ensure the NAP (Name, Address, Phone) matches the website's Schema.org markup **
 * **Business Name**: `Al Arbab Travels (Pvt) Ltd`
 * **Primary Category**: `Travel Agency`
 * **Secondary Categories**: `Visa Consultant`, `Airline Ticket Agency`, `Tour Agency`
-* **Street Address**: `Executive Heights, Blue Area, Jinnah Avenue`
+* **Street Address**: `Eagle Plaza, Mezzanine No. 121, Fazal-e-Haq Road, Blue Area`
 * **City / Territory**: `Islamabad, Islamabad Capital Territory 44000`
 * **Country**: `Pakistan`
-* **Phone**: `+92 345 5320968` / `+92 315 5436696`
+* **Phone**: `051 2000066` / `+92 309 9923232` / `+92 315 2323811`
 * **Website URL**: `https://alarbabtravel.pk`
 * **Appointment URL**: `https://alarbabtravel.pk/contact`
 * **Department of Tourist Services License**: `DTS Lic. #4829` (Highlight in business description).

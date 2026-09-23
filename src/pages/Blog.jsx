@@ -26,12 +26,16 @@ export default function Blog({ onOpenEligibility }) {
     : blogPosts.filter(p => p.category === activeCategory);
 
   const pageTitle = selectedArticle
-    ? `${selectedArticle.title} | Al Arbab Travels`
-    : "Visa Guides & Travel Insights 2026 | Al Arbab Travels Islamabad";
+    ? `${selectedArticle.title} | Al Arbab Travels Islamabad`
+    : "Pakistan Visa Guides & Travel Insights 2026 | Al Arbab Travels Islamabad";
 
   const pageDescription = selectedArticle
     ? selectedArticle.excerpt
-    : "Authoritative visa guides, embassy financial guidelines, and immigration insights for Pakistani passport holders by Al Arbab Travels counselors.";
+    : "Authoritative visa guides, embassy financial guidelines, Umrah requirements, and immigration insights for Pakistani citizens by Al Arbab Travels counselors in Islamabad.";
+
+  const pageKeywords = selectedArticle
+    ? `${selectedArticle.title}, Pakistan visa guide 2026, visa consultancy in Islamabad, Al Arbab Travels`
+    : "Pakistan visa guide 2026, Schengen visa from Pakistan, Umrah guide for Pakistanis, Thailand eVisa Pakistan, visa consultancy in Islamabad, best travel agency in Blue Area";
 
   const blogSchema = selectedArticle ? {
     "@context": "https://schema.org",
@@ -88,7 +92,7 @@ export default function Blog({ onOpenEligibility }) {
       <SEO 
         title={pageTitle}
         description={pageDescription}
-        keywords="Pakistan visa guide 2026, Schengen visa file preparation Pakistan, UK visa refusal reasons Pakistan, Germany opportunity card Pakistan"
+        keywords={pageKeywords}
         canonicalPath={selectedArticle ? `/blog/${selectedArticle.slug || selectedArticle.id}` : "/blog"}
         image={selectedArticle?.image || "https://alarbabtravel.pk/hero_travel_lux.webp"}
         type={selectedArticle ? "article" : "website"}
@@ -106,10 +110,14 @@ export default function Blog({ onOpenEligibility }) {
           <div className="container">
             <div style={{ maxWidth: '760px' }}>
               <div className="badge-gold" style={{ marginBottom: '0.85rem' }}>
-                <BookOpen size={14} /> Immigration Insights
+                <BookOpen size={14} /> Immigration Insights · Islamabad
               </div>
-              <h1 style={{ fontSize: 'clamp(2.2rem, 4.2vw, 3.2rem)', fontWeight: 700, lineHeight: 1.2, marginBottom: '1rem', color: '#ffffff' }}>
-                Expert Visa Guides & <span style={{ color: 'var(--gold-accent)' }}>Travel Intelligence</span>
+              <h1 style={{ fontSize: 'clamp(2.2rem, 4.2vw, 3.2rem)', fontWeight: 700, lineHeight: 1.2, marginBottom: '1rem', color: 'var(--text-heading)' }}>
+                {selectedArticle ? (
+                  <>{selectedArticle.title}</>
+                ) : (
+                  <>Visa Guides &amp; Travel Insights — <span style={{ color: 'var(--gold-accent)' }}>Islamabad Advisory</span></>
+                )}
               </h1>
               <p style={{ color: 'var(--text-body)', fontSize: '1.05rem', lineHeight: 1.7 }}>
                 Directly from the desks of our Islamabad visa caseworkers. Stay informed on recent policy changes, financial rules, and consular trends.
@@ -200,7 +208,7 @@ export default function Blog({ onOpenEligibility }) {
                         </span>
                       </div>
 
-                      <h2 style={{ fontSize: '1.25rem', fontWeight: 600, lineHeight: 1.35, marginBottom: '0.75rem', color: '#ffffff' }}>
+                      <h2 style={{ fontSize: '1.25rem', fontWeight: 600, lineHeight: 1.35, marginBottom: '0.75rem', color: 'var(--text-heading)' }}>
                         {post.title}
                       </h2>
 
@@ -225,7 +233,7 @@ export default function Blog({ onOpenEligibility }) {
                         style={{
                           background: 'none',
                           border: 'none',
-                          color: '#ffffff',
+                          color: 'var(--text-heading)',
                           fontWeight: 600,
                           fontSize: '0.85rem',
                           display: 'flex',
@@ -308,7 +316,7 @@ export default function Blog({ onOpenEligibility }) {
                 {selectedArticle.category}
               </div>
 
-              <h2 style={{ fontSize: '1.75rem', fontWeight: 700, lineHeight: 1.25, marginBottom: '0.85rem', color: '#ffffff' }}>
+              <h2 style={{ fontSize: '1.75rem', fontWeight: 700, lineHeight: 1.25, marginBottom: '0.85rem', color: 'var(--text-heading)' }}>
                 {selectedArticle.title}
               </h2>
 

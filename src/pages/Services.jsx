@@ -112,19 +112,41 @@ export default function Services({ onOpenEligibility }) {
   if (faqSchema) pageSchemas.push(faqSchema);
 
   const pageTitle = serviceSlug 
-    ? `${activeService.title} | Al Arbab Travels Islamabad`
-    : "Visa Consultancy, Umrah & Travel Services | Al Arbab Travels Islamabad";
+    ? (activeService.id === 'umrah-hajj'
+        ? "Umrah Packages Islamabad 2026 | Hajj & Umrah Travel Agency Pakistan | Al Arbab Travels"
+        : activeService.id === 'visa-services'
+        ? "Best Visa Consultant in Islamabad | Visit Visa Agency & Visa Consultancy | Al Arbab Travels"
+        : activeService.id === 'air-ticketing'
+        ? "Air Ticketing Agency Islamabad | Domestic & International Flight Booking | Al Arbab Travels"
+        : `${activeService.title} | Al Arbab Travels Islamabad`)
+    : "Visa Consultancy, Umrah Packages & Travel Services in Islamabad | Al Arbab Travels";
 
   const pageDescription = serviceSlug
-    ? (activeService.summary.length > 155 ? `${activeService.summary.substring(0, 152)}...` : activeService.summary)
-    : "Comprehensive travel services in Islamabad: full Asian visit visas, Umrah packages, flight ticketing, and expert file preparation for Schengen & USA.";
+    ? (activeService.id === 'umrah-hajj'
+        ? "Verified Umrah packages from Islamabad with 5-star Makkah Clock Tower hotels, Nusuk electronic visas, direct flights & bullet train transfers. Trusted pilgrimage agency."
+        : activeService.id === 'visa-services'
+        ? "Looking for the best visa consultant in Islamabad? Al Arbab Travels provides full visit visa processing for Asian countries & expert embassy file preparation for UK, USA, Schengen."
+        : activeService.id === 'air-ticketing'
+        ? "Leading air ticketing agency in Islamabad. Best airfares for PIA, Saudia, Emirates, Qatar Airways & domestic flights with instant ticket issuance in Blue Area."
+        : (activeService.summary.length > 155 ? `${activeService.summary.substring(0, 152)}...` : activeService.summary))
+    : "Comprehensive travel services in Blue Area, Islamabad: verified Umrah packages, full Asian visit visas, worldwide air ticketing, and expert file preparation for Schengen & USA.";
+
+  const pageKeywords = serviceSlug
+    ? (activeService.id === 'umrah-hajj'
+        ? "Umrah packages Islamabad, Umrah packages Pakistan, Umrah travel agent Islamabad, Umrah packages 2026, 5 star Umrah package Islamabad, Nusuk visa Pakistan"
+        : activeService.id === 'visa-services'
+        ? "visa consultancy in Islamabad, best visa consultant in Islamabad, best visa consultants near me, visit visa agency Islamabad, travel agency near me Blue Area, Asian visa processing Islamabad"
+        : activeService.id === 'air-ticketing'
+        ? "air ticketing agency Islamabad, air tickets Pakistan, flight booking Islamabad, domestic flights Pakistan, airline tickets Blue Area Islamabad"
+        : `${activeService.title}, best travel agency in Islamabad, best visa consultants near me, travel agency in Blue Area Islamabad`)
+    : "best travel agency in Islamabad, visa consultancy in Islamabad, best travel agency near me, best travel agency in Blue Area Islamabad, Umrah packages Islamabad, air ticketing agency Islamabad, visit visa agency Islamabad";
 
   return (
     <>
       <SEO 
         title={pageTitle}
         description={pageDescription}
-        keywords={`${activeService.title}, Asian visa processing Islamabad, Schengen visa file preparation Pakistan, USA visa application support Islamabad, Umrah packages 2026, air ticketing Pakistan`}
+        keywords={pageKeywords}
         canonicalPath={serviceSlug ? `/services/${activeService.slug}` : "/services"}
         schema={pageSchemas}
       />
@@ -163,8 +185,20 @@ export default function Services({ onOpenEligibility }) {
               <div className="badge-gold" style={{ marginBottom: '0.85rem' }}>
                 <MapPin size={14} /> Al Arbab Travels (Pvt) Ltd · Blue Area, Islamabad
               </div>
-              <h1 style={{ fontSize: 'clamp(2.2rem, 4.2vw, 3.2rem)', fontWeight: 700, lineHeight: 1.2, marginBottom: '1rem', color: '#ffffff' }}>
-                {activeService.title}
+              <h1 style={{ fontSize: 'clamp(2.2rem, 4.2vw, 3.2rem)', fontWeight: 700, lineHeight: 1.2, marginBottom: '1rem', color: 'var(--text-heading)' }}>
+                {serviceSlug ? (
+                  activeService.id === 'umrah-hajj' ? (
+                    <>Umrah Packages Islamabad &amp; <span style={{ color: 'var(--gold-accent)' }}>Pilgrimage Services</span></>
+                  ) : activeService.id === 'visa-services' ? (
+                    <>Best Visa Consultant in Islamabad — <span style={{ color: 'var(--gold-accent)' }}>Visit Visa Agency</span></>
+                  ) : activeService.id === 'air-ticketing' ? (
+                    <>Air Ticketing Agency in Islamabad — <span style={{ color: 'var(--gold-accent)' }}>Worldwide Flights</span></>
+                  ) : (
+                    <>{activeService.title} in <span style={{ color: 'var(--gold-accent)' }}>Islamabad</span></>
+                  )
+                ) : (
+                  <>Comprehensive Travel Services &amp; <span style={{ color: 'var(--gold-accent)' }}>Visa Consultancy in Islamabad</span></>
+                )}
               </h1>
               <p style={{ color: 'var(--text-body)', fontSize: '1.05rem', lineHeight: 1.7 }}>
                 {activeService.tagline}
@@ -217,7 +251,7 @@ export default function Services({ onOpenEligibility }) {
                           {getIcon(srv.icon)}
                         </div>
                         <div>
-                          <div style={{ fontWeight: 600, fontSize: '0.95rem', color: '#ffffff', fontFamily: 'var(--font-heading)' }}>
+                          <div style={{ fontWeight: 600, fontSize: '0.95rem', color: 'var(--text-heading)', fontFamily: 'var(--font-heading)' }}>
                             {srv.title}
                           </div>
                           <div style={{ fontSize: '0.75rem', color: isCurrent ? 'var(--gold-accent)' : 'var(--text-muted)' }}>
@@ -254,7 +288,7 @@ export default function Services({ onOpenEligibility }) {
                   </span>
                 </div>
 
-                <h2 style={{ fontSize: '1.95rem', fontWeight: 700, marginBottom: '0.4rem', color: '#ffffff' }}>
+                <h2 style={{ fontSize: '1.95rem', fontWeight: 700, marginBottom: '0.4rem', color: 'var(--text-heading)' }}>
                   {activeService.title}
                 </h2>
 
@@ -275,7 +309,7 @@ export default function Services({ onOpenEligibility }) {
 
                 {/* Key Deliverables List */}
                 <div style={{ marginBottom: '2rem' }}>
-                  <h3 style={{ fontSize: '0.95rem', fontWeight: 700, marginBottom: '0.95rem', color: '#ffffff', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
+                  <h3 style={{ fontSize: '0.95rem', fontWeight: 700, marginBottom: '0.95rem', color: 'var(--text-heading)', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
                     What Is Included in Our Service:
                   </h3>
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '0.65rem' }}>
@@ -319,7 +353,7 @@ export default function Services({ onOpenEligibility }) {
                   <div style={{ marginBottom: '2.25rem', paddingTop: '1.5rem', borderTop: '1px solid var(--border-subtle)' }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '1rem' }}>
                       <HelpCircle size={18} color="var(--gold-accent)" />
-                      <h3 style={{ fontSize: '1.15rem', fontWeight: 700, color: '#ffffff', margin: 0 }}>
+                      <h3 style={{ fontSize: '1.15rem', fontWeight: 700, color: 'var(--text-heading)', margin: 0 }}>
                         Frequently Asked Questions about {activeService.title}
                       </h3>
                     </div>
@@ -343,7 +377,7 @@ export default function Services({ onOpenEligibility }) {
                               padding: '1rem 1.25rem',
                               background: 'transparent',
                               border: 'none',
-                              color: '#ffffff',
+                              color: 'var(--text-heading)',
                               display: 'flex',
                               alignItems: 'center',
                               justifyContent: 'space-between',
@@ -378,7 +412,7 @@ export default function Services({ onOpenEligibility }) {
                 {/* Structured Internal Linking Section */}
                 {activeService.relatedServices && activeService.relatedServices.length > 0 && (
                   <div style={{ marginBottom: '2.25rem', paddingTop: '1.5rem', borderTop: '1px solid var(--border-subtle)' }}>
-                    <h3 style={{ fontSize: '1rem', fontWeight: 700, color: '#ffffff', marginBottom: '1rem', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
+                    <h3 style={{ fontSize: '1rem', fontWeight: 700, color: 'var(--text-heading)', marginBottom: '1rem', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
                       Related Travel &amp; Visa Solutions
                     </h3>
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1rem' }}>
@@ -407,7 +441,7 @@ export default function Services({ onOpenEligibility }) {
                               {rel.desc}
                             </p>
                           </div>
-                          <div style={{ display: 'flex', alignItems: 'center', gap: '4px', marginTop: '0.75rem', fontSize: '0.76rem', color: '#ffffff', fontWeight: 600 }}>
+                          <div style={{ display: 'flex', alignItems: 'center', gap: '4px', marginTop: '0.75rem', fontSize: '0.76rem', color: 'var(--text-heading)', fontWeight: 600 }}>
                             <span>Explore Details</span>
                             <ArrowRight size={12} color="var(--gold-accent)" />
                           </div>
@@ -442,7 +476,7 @@ export default function Services({ onOpenEligibility }) {
         </section>
 
         {/* Standards Grid */}
-        <section className="section-py" style={{ backgroundColor: 'rgba(19, 24, 36, 0.5)' }}>
+        <section className="section-py" style={{ backgroundColor: '#f7fafc' }}>
           <div className="container">
             <div className="section-header text-center">
               <div className="badge-gold" style={{ marginBottom: '0.6rem' }}>

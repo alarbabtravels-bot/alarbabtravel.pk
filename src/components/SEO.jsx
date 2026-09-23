@@ -9,7 +9,7 @@ import { useLocation } from 'react-router-dom';
 export default function SEO({
   title = "Al Arbab Travels | Premier Visa Consultancy & Travel Agency Islamabad",
   description = "Al Arbab Travels is Pakistan's premier travel agency and visa consultancy in Islamabad. Full assistance for Asian visit visas, Umrah packages, flight booking, and expert file preparation for Schengen & USA.",
-  keywords = "visa consultancy Pakistan, Asian visit visa processing, Umrah packages Islamabad, air ticketing Pakistan, Schengen visa file preparation Pakistan, USA visa application support Pakistan",
+  keywords = "best travel agency near me, best travel agency in Islamabad, best travel agency in Blue Area, best visa consultants near me, best visa services Islamabad, visa consultancy Pakistan, Asian visit visa processing, Umrah packages Islamabad, air ticketing Pakistan, Schengen visa file preparation Pakistan, USA visa application support Pakistan",
   canonicalPath = "",
   image = "https://alarbabtravel.pk/hero_travel_lux.webp",
   type = "website",
