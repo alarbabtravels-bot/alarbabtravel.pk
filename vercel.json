@@ -110,7 +110,7 @@
   ],
   "rewrites": [
     {
-      "source": "/((?!assets|favicon|apple-touch|android-chrome|site\\.webmanifest|robots\\.txt|sitemap\\.xml|.*\\.[\\w]+$).*)",
+      "source": "/(.*)",
       "destination": "/index.html"
     }
   ],
