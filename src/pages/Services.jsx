@@ -116,7 +116,7 @@ export default function Services({ onOpenEligibility }) {
         ? "Umrah Packages Islamabad 2026 | Hajj & Umrah Travel Agency Pakistan | Al Arbab Travels"
         : activeService.id === 'visa-services'
         ? "Best Visa Consultant in Islamabad | Visit Visa Agency & Visa Consultancy | Al Arbab Travels"
-        : activeService.id === 'air-ticketing'
+        : (activeService.id === 'flights' || activeService.id === 'air-ticketing')
         ? "Air Ticketing Agency Islamabad | Domestic & International Flight Booking | Al Arbab Travels"
         : `${activeService.title} | Al Arbab Travels Islamabad`)
     : "Visa Consultancy, Umrah Packages & Travel Services in Islamabad | Al Arbab Travels";
@@ -126,7 +126,7 @@ export default function Services({ onOpenEligibility }) {
         ? "Verified Umrah packages from Islamabad with 5-star Makkah Clock Tower hotels, Nusuk electronic visas, direct flights & bullet train transfers. Trusted pilgrimage agency."
         : activeService.id === 'visa-services'
         ? "Looking for the best visa consultant in Islamabad? Al Arbab Travels provides full visit visa processing for Asian countries & expert embassy file preparation for UK, USA, Schengen."
-        : activeService.id === 'air-ticketing'
+        : (activeService.id === 'flights' || activeService.id === 'air-ticketing')
         ? "Leading air ticketing agency in Islamabad. Best airfares for PIA, Saudia, Emirates, Qatar Airways & domestic flights with instant ticket issuance in Blue Area."
         : (activeService.summary.length > 155 ? `${activeService.summary.substring(0, 152)}...` : activeService.summary))
     : "Comprehensive travel services in Blue Area, Islamabad: verified Umrah packages, full Asian visit visas, worldwide air ticketing, and expert file preparation for Schengen & USA.";
@@ -136,7 +136,7 @@ export default function Services({ onOpenEligibility }) {
         ? "Umrah packages Islamabad, Umrah packages Pakistan, Umrah travel agent Islamabad, Umrah packages 2026, 5 star Umrah package Islamabad, Nusuk visa Pakistan"
         : activeService.id === 'visa-services'
         ? "visa consultancy in Islamabad, best visa consultant in Islamabad, best visa consultants near me, visit visa agency Islamabad, travel agency near me Blue Area, Asian visa processing Islamabad"
-        : activeService.id === 'air-ticketing'
+        : (activeService.id === 'flights' || activeService.id === 'air-ticketing')
         ? "air ticketing agency Islamabad, air tickets Pakistan, flight booking Islamabad, domestic flights Pakistan, airline tickets Blue Area Islamabad"
         : `${activeService.title}, best travel agency in Islamabad, best visa consultants near me, travel agency in Blue Area Islamabad`)
     : "best travel agency in Islamabad, visa consultancy in Islamabad, best travel agency near me, best travel agency in Blue Area Islamabad, Umrah packages Islamabad, air ticketing agency Islamabad, visit visa agency Islamabad";
@@ -191,7 +191,7 @@ export default function Services({ onOpenEligibility }) {
                     <>Umrah Packages Islamabad &amp; <span style={{ color: 'var(--gold-accent)' }}>Pilgrimage Services</span></>
                   ) : activeService.id === 'visa-services' ? (
                     <>Best Visa Consultant in Islamabad — <span style={{ color: 'var(--gold-accent)' }}>Visit Visa Agency</span></>
-                  ) : activeService.id === 'air-ticketing' ? (
+                  ) : (activeService.id === 'flights' || activeService.id === 'air-ticketing') ? (
                     <>Air Ticketing Agency in Islamabad — <span style={{ color: 'var(--gold-accent)' }}>Worldwide Flights</span></>
                   ) : (
                     <>{activeService.title} in <span style={{ color: 'var(--gold-accent)' }}>Islamabad</span></>

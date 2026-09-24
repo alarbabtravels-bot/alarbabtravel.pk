@@ -479,7 +479,7 @@ export default function Destinations({ onOpenEligibilityWithCountry }) {
                     </Link>
 
                     <Link
-                      to="/services/air-ticketing"
+                      to="/services/flights"
                       style={{
                         padding: '1rem',
                         borderRadius: '12px',

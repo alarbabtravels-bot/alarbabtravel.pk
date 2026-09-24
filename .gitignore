@@ -45,7 +45,5 @@ secret*.json
 *.temp
 
 # Local scratch and test run media
-scripts/*.png
-scripts/*.jpg
-scripts/*.bin
-Claude outputs/
+*.png.tmp
+*.jpg.tmp

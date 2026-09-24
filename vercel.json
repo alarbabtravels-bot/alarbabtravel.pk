@@ -103,6 +103,11 @@
       "permanent": true
     },
     {
+      "source": "/services/air-ticketing",
+      "destination": "/services/flights",
+      "permanent": true
+    },
+    {
       "source": "/services/tours",
       "destination": "/services/group-corporate-travel",
       "permanent": true

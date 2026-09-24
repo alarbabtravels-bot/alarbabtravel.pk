@@ -109,7 +109,7 @@ For applicants facing previous visa refusals from the UK, Canada, USA, or Scheng
   {
     id: "flights",
     slug: "flights",
-    aliases: ["flight-ticketing"],
+    aliases: ["flight-ticketing", "air-ticketing"],
     title: "Air Ticketing & Global Route Concierge",
     icon: "Plane",
     tagline: "Airline reservation console ticketing, competitive international fares & verifiable embassy PNRs",
